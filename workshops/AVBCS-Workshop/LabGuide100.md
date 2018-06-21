@@ -98,102 +98,70 @@ architecture.
   - The Application ID text field is automatically populated as you type based on the Application Name.
     ![](images/100/index.png)
 
-- The Project Creation will take a few minutes.
-
-  ![](images/100/index.png)
-
 - You now have a new application, in which you can begin building pages and adding data.
 
-  ![](images/100/index.png)
+  ![](images/100/welcome.png)
 
 ## Import Business Data
 
-### **STEP 5**: Import File containing business data
+### **STEP**: Import File containing business data
 
-In this step you are still assuming the identity of the Javascript, **_Lisa Jones_**.
+In this step you are assuming the identity of the Javascript, **_Lisa Jones_**.
 
-![](images/lisa.png)
+    ![](images/lisa.png)
 
-- Click **Issues** on left hand navigation panel to display the Track Issues page.
+- First we will import some data for our application to display. Click on the "hamburger" icon in the left panel to open the "Business Objects" panel and click the "menu icon next to the plus sign and click "Data Manager" to open the import tool.
 
-  ![](images/100/Picture100-16.png)
+  ![](images/100/busObj.png)
 
-- Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**.
+- A box will appear where you will enter the label for your new business object. Enter "Inventory" and click the check mark. (the Id field is automatically populated based on the label you provide)
 
-  **Note:** Throughout the lab you will assign your own account as the “physical” owner of the issue, but for the sake of this workshop, **Bala Gupta** will be the “logical” owner of the following issues.
+  ![](images/100/newBusObj.png)
 
-  ![](images/bala.png)
+- In order to import the data to our business object the fields need to be created for the data to be placed into. Click the **Fields** tab, then click the **+ New Field** button. Here well add our fields to the auto generated fields.
 
-  **Summary:**
-  `Create Initial GIT Repository for Twitter Feed Service`
+  ![](images/100/newField.png)
 
-  **Description:**
-  `Create Initial GIT Repository for Twitter Feed Service`
+- For our first field enter name and select the **A** icon to set its field type as a string, then click the **check mark**.
 
-  **Type:** `Task`
+  ![](images/100/nameField.png)
 
-  **Owner:** `Select your account provided in the dropdown [Logical Owner: Bala Gupta]`
+- Add the following fields and set their types:
 
-  **Story Points:** `1`
+  - type, string
+  - year, number
+  - quantity, number
+  - reserved, number
 
-  Note: Story point is an arbitrary measure used by Scrum teams. They are used to measure the effort required to implement a story. This [Site](https://agilefaq.wordpress.com/2007/11/13/what-is-a-story-point/) will provide more information.
+- Now we'll import the Inventory data from a file. Click on the **Data Manager** entry in the **Business Object** menu.
 
-  ![](images/100/Picture100-17.png)
+  ![](images/100/busObjMenu.png)
 
-### **STEP 6**: Create Issue for Update Twitter Credentials
+- Click **Import from File** and use the provided "Inventory.csv" file to import the data.
 
-- Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**.
+  ![](images/100/dataManager.png)
 
-  ![](images/bala.png)
+- You will see a popup stating that the import is taking place and it will confirm with a green check mark once the import is complete. (if there are any errors you may need to check your field names in the **Fields** tab against the headings in the provided CSV file and make sure they match)
 
-  **Summary:** `Create Filter on Twitter Feed`
+  ![](images/100/importing.png)
 
-  **Description:** `Create Filter to allow user to supply text to reduce the amount of data returned by the Twitter feed`
+- You can go back to the **Data** tab of the Inventory business object to verify or edit the data imported.
 
-  **Type:** `Feature`
+- Create a new business object called "Variant" and add the following fields with the specified types:
 
-  **Owner:** `Select your account provided in the dropdown [Logical Owner: Bala Gupta]`
+  - type, string
+  - variant, string
 
-  **Story Points:** `2`
+- Return to the **Data Manager** and import data from the **variant** file. We will import the data for the Variant business object. Visual Builder will know which business object to associate the data with by the file name of the data file, so make sure the file name matches the name of the business object.
 
-  ![](images/100/Picture100-18.png)
+- Check the **Data** tab of the Variant business object to see the imported data.
 
-### **STEP 7**: Create Issue for initial GIT Repository creation
+### **STEP**:
 
-- Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**. Note: The next two issues will logically be owned by John Dunbar.
+- Click on the **monitor** icon in the left panel to open the web apps panel. Then click on the "+ Web Application" button to create a new web app.
 
-  ![](images/john.png)
+  ![](images/100/webApps.png)
 
-  **Summary:** `Create Initial GIT Repository for Twitter Feed Marketing UI`
+### **STEP**:
 
-  **Description:** `Create Initial GIT Repository for Twitter Feed Marketing UI`
-
-  **Type:** `Task`
-
-  **Owner:** `Select your account provided in the dropdown [Logical Owner: John Dunbar]`
-
-  **Story Points:** `1`
-
-  ![](images/100/Picture100-19.png)
-
-### **STEP 8**: Create Issue for Displaying Twitter Feed
-
-- Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**.
-
-  ![](images/john.png)
-
-  **Summary:** `Display Twitter Feed in Table Format`
-
-  **Description:** `Display Twitter Feed in Table Format`
-
-  **Type:** `Feature`
-
-  **Owner:** `Select account provided in the dropdown [Logical Owner: John Dunbar]`
-
-  **Story Points:** `2`
-
-  ![](images/100/Picture100-20.png)
-
-- Click the back arrow ![](images/100/Picture100-21.png) on the **left side** of the window, or click on the **Issues** menu option to view all newly created issues.
-
-  ![](images/100/Picture100-22.png)
+-
