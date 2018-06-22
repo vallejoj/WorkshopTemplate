@@ -1,4 +1,4 @@
-id,creationDate,lastUpdateDate,createdBy,lastUpdatedBy,name,type,year,quantity,reserved
+id,creationDate,lastUpdateDate,createdBy,lastUpdatedBy,name,variant,year,quantity,reserved
 
 1,,,,,Fresh,Riesling,2014,150,20
 2,,,,,Toast,Chardonnay,2015,200,40

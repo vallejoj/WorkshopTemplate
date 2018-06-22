@@ -104,11 +104,13 @@ architecture.
 
 ## Import Business Data
 
-### **STEP**: Import File containing business data
+### **STEP**: Import Files containing business data
+
+#### Create Inventory Business Object and Import the Inventory Data
 
 In this step you are assuming the identity of the Javascript, **_Lisa Jones_**.
 
-    ![](images/lisa.png)
+![](images/lisa.png)
 
 - First we will import some data for our application to display. Click on the "hamburger" icon in the left panel to open the "Business Objects" panel and click the "menu icon next to the plus sign and click "Data Manager" to open the import tool.
 
@@ -128,7 +130,7 @@ In this step you are assuming the identity of the Javascript, **_Lisa Jones_**.
 
 - Add the following fields and set their types:
 
-  - type, string
+  - variant, string
   - year, number
   - quantity, number
   - reserved, number
@@ -147,6 +149,9 @@ In this step you are assuming the identity of the Javascript, **_Lisa Jones_**.
 
 - You can go back to the **Data** tab of the Inventory business object to verify or edit the data imported.
 
+#### Create Variant Business Object and Import the Variant Data
+
+- Now we will do the same process for bringing the variant data into the app. You can review the process we just completed for the inventory data if you need a reference.
 - Create a new business object called "Variant" and add the following fields with the specified types:
 
   - type, string
@@ -156,12 +161,40 @@ In this step you are assuming the identity of the Javascript, **_Lisa Jones_**.
 
 - Check the **Data** tab of the Variant business object to see the imported data.
 
-### **STEP**:
+### **STEP Creating the Web App**:
+
+Now that we have data for our app to display we can build our web app to display and modify that data.
 
 - Click on the **monitor** icon in the left panel to open the web apps panel. Then click on the "+ Web Application" button to create a new web app.
 
   ![](images/100/webApps.png)
 
-### **STEP**:
+- Name your app "InventoryWebApp" and click **Create**.
 
--
+  ![](images/100/nameWebApp.png)
+
+- Your applications canvas will open. This is where we will begin adding components to the page. You can expand the drop downs in the left panel to see where this page is in the structure of the app.
+
+  ![](images/100/appStructure.png)
+
+- To begin, we'll add a list to our page to display our added inventory data. scroll down in the components list panel and drag a **List View** onto our page.
+
+  ![](images/100/addList.png)
+
+- To associate our inventory data with the list, in the right panel select **Add Data**. (If you DO NOT see **Add Data** you may need to expand the right panel or click on the **Quick Add** icon in the "List View" panel, highlighted below)
+
+![](images/100/addDataList.png)
+
+- There are several steps for selecting data for our list:
+
+  - For **Select Endpoing** expand **Business Objects** > **Inventory** and select the **GET /Inventory** entry, then click **Next**.
+
+  ![](images/100/inventoryEndpoint.png)
+
+  - For **Choose Template** we will use the default template which is at the top of the list and then click **Next**.
+
+  ![](images/100/defaultTemplate.png)
+
+  - For our **Fields** we will select data from the **Endpoint Structure** and drag them into the **Fields** boxes. Drag the following items into the given Field:
+    - "title1": name
+    - "title2":
