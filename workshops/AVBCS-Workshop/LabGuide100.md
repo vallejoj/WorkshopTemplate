@@ -13,12 +13,10 @@ You will take on 2 Personas during the workshop. The **Javascript Developer Per
 
 - Creating a Web Application
   - Create application within Visual Builder user interface
+  - Add busines data for application to display
 - Create Application Pages
-  - Create pages for business objects
-- Add Navigation
-  - Add navigation between pages within the application
-- Add Pages for Data Manipulation
-  - Add pages to allow data insertion, changes, and deletion
+  - Create pages for displaying business data
+  - Create pages for creating and editing business data
 
 ## Required Artifacts
 
@@ -102,7 +100,7 @@ architecture.
 
   ![](images/100/welcome.png)
 
-## Import Business Data
+# Import Business Data
 
 ### **STEP**: Import Files containing business data
 
@@ -183,11 +181,11 @@ Now that we have data for our app to display we can build our web app to display
 
 - To associate our inventory data with the list, in the right panel select **Add Data**. (If you DO NOT see **Add Data** you may need to expand the right panel or click on the **Quick Add** icon in the "List View" panel, highlighted below)
 
-![](images/100/addDataList.png)
+  ![](images/100/addPage.png)
 
 - There are several steps for selecting data for our list:
 
-  - For **Select Endpoing** expand **Business Objects** > **Inventory** and select the **GET /Inventory** entry, then click **Next**.
+  - For **Select Endpoint** expand **Business Objects** > **Inventory** and select the **GET /Inventory** entry, then click **Next**.
 
   ![](images/100/inventoryEndpoint.png)
 
@@ -195,6 +193,119 @@ Now that we have data for our app to display we can build our web app to display
 
   ![](images/100/defaultTemplate.png)
 
-  - For our **Fields** we will select data from the **Endpoint Structure** and drag them into the **Fields** boxes. Drag the following items into the given Field:
+  - For our **Fields** we will select data from the **Endpoint Structure** and drag them into the **Fields** boxes. Drag the following items into the listed Field and then click **Next**:
     - "title1": name
-    - "title2":
+    - "title2": variant
+    - "value1": quantity
+    - "value2": reserved
+
+  ![](images/100/dataFields.png)
+
+- We don't need to define a query for our data, so we can click **Finish**.
+
+- At this point we have an application that will display our data and we can look at the the live app by clicking on the **Play** button in the top right corner.
+
+  ![](images/100/liveView.png)
+
+  - We have created a simple app to display our wine inventory...
+
+  ![](images/100/firstLiveView.png)
+
+Our app is displaying our data but our inventory/reserved counts aren't labeled. Let's fix that so users will know what these numbers mean. To do that we can customize the data displayed in our list view.
+
+- Leave the live view and return to the design view of your app. Select an item in the list so that it is highlighted with a blue border and a **List Item** tag.
+
+  ![](images/100/listItem.png)
+
+- In the detail panel on the right side, select the **General** tab. We can add our label to the data in the fields. We add the label as a quoted string inside the double square brackets. So the data in the "Value1" field will contain the following
+
+  `[["Inventory: " + $current.data.quantity]]`
+
+  and the "Value2" field will have:
+
+  `[["Reserved: " + $current.data.reserved]]`
+
+* Now our app displays a list of the available wines with their inventory count and reserved count.
+
+  ![](images/100/liveCountsLabeled.png)
+
+# Add Create and Edit Pages
+
+Now that we have a display of our data, the next step is to allow additions and edits to that data. This will allow users to add new wines as they become available and edit the inventory/reserved counts. Oracle Autonomous Visual Builder makes this very easy with the **Quick Start** menu we accessed earlier.
+
+- In the **Designer View** of our app, click inside the list component but outside an individual item so that the List is selected and the **List View** tag is displayed.
+
+![](images/100/listSelected.png)
+
+- This will allow you to access the **Quick Start** icon and menu where we'll select **Add Create Page**.
+
+![](images/100/addCreatePage.png)
+
+- This will bring up the **Add Create Page**. For the first step, we will leave the endpoint set as **POST /Inventory** and click **Next**. This will bring us to the **Page Detail** step where we can select the fields we would like to make available for creating new records. We'll select the following:
+
+  - name
+  - variant
+  - inventory
+  - reserved
+
+- Also adjust the **Button Label** to simply "Create" and click **Finish**.
+
+  ![](images/100/createInventoryDetail.png)
+
+- You will be presented with the main page of the app again. In order to view the new Create Page click the icon to expand the left panel, select the monitor icon which represents web apps, and if you have not expanded the app's layout expand **InventoryWebApp** > **flows** > **main** and select **CreateInventory**.
+
+  ![](images/100/createPageView.png)
+
+With this page created we can toggle live mode right in the app editor to interact with the app and add data. To enable live mode, click the **Live** button above the right side panel.
+
+![](images/100/liveButton.png)
+
+- Once in live mode, enter a new wine and click **Save**.(The save may take a few seconds, you'll know it's finished when you see the following screen and a notification that the save completed) You can enter your favorite wine or use the following example:
+
+  - name: Ice
+  - variant: white
+  - quantity: 50
+  - reserved: 0
+
+  ![](images/100/newWine.png)
+
+  ![](images/100/flow.png)
+
+- To view our new entry let's go back to our apps main page, which you can access in the left side panel or in the tabs at the top of the page if you have not closed it. (Don't forget to exit live mode when you go back to the **CreateInventory** page designer by clicking on the "Play" arrow button.)
+
+  ![](images/100/pageTabs.png)
+
+- Back in the **main-start** page you'll see our new entry is added to the list, and also note that there is a new **Create** button which was added for us by using the **Quick Start** guide to make our new create page. This is a major advantage to using the quick start guide for creating new pages, it will make buttons for us that will link to our new pages.
+
+- Now lets use the **Quick Start** guide to add an **Edit** page and a **Delete** button to our app's main page. Once again, click on the **List** component outside of a specific item so that the **List View** tag appears.
+
+  ![](images/100/listSelected.png)
+
+- Now the **List View** detail panel should be displayed on the right. Click on the **Quick Start** icon and we'll see the links to add pages. This time we'll add an **Edit** page. This will allow users to edit the inventory and reserve counts of the items. Click on **Add Edit Page** in the right panel.
+
+  - ![](images/100/addEditPage.png)
+
+- On the **Select Read Endpoint** page we'll leave the default endpoint selected (GET /Inventory/{Inventory_Id}), and click **Next**. On the next step we'll leave the **Select Update Endpoint** set as the default (PATCH /Inventory/{Inventory_Id}) and click **Next**.
+
+- In the **Page Details** step we'll select the fields we want displayed on our edit page, and then click **Finish**. Here we'll select:
+
+  - Name
+  - Variant
+  - Quantity
+  - Reserved
+
+  ![](images/100/editFields.png)
+
+- Now if we go back to our "Main-start" page and again enter **Live** mode by clicking the "Live" button above the right panel we can test our edit page. Click on a list entry and the the **Edit Inventory** button will become active. Click on the **Edit Inventory** button to go to our new edit page we just created.
+
+  ![](images/100/editLive.png)
+
+- This section of the web app will allow users to update items with new counts as they become available. If you would like to test the edit functionality, change a count and press save, otherwise just press cancel to return to the **main-start** page. Remember to exit **Live** mode by clicking the "Live" button in the top right.
+
+- If we go back to our **main** tab we can now see our apps structure:
+
+![](images/100/structure.png)
+
+# Summary
+
+We have now created an application in Autonomous Visual Builder Cloud Service, added our business data, and added pages to display, add to, and edit our data all with very little need for code.
