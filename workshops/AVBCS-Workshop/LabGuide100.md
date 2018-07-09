@@ -29,21 +29,19 @@ You will take on 2 Personas during the workshop. The **Javascript Developer Per
 - From any browser, go to the URL:
   `https://cloud.oracle.com`
 
-- click **Sign In** in the upper right hand corner of the browser
+- click **Sign In** in the upper right hand corner of the browser and on the next screen enter you Cloud Account Name.
+
+**NOTE:** The **Cloud Account Name, User Name** and **Password** values will be given to you by the instructor or Trial confirmation email.
+
+![](images/100/signIn.png)
+
+![](images/100/signIn2.png)
+
+- **IMPORTANT** - _Under my services, select from the drop down list the correct data center and click on **My Services**. If you are unsure of the data center you should select, and this is an in-person training event, ***ask your instructor*** which **Region** to select from the drop down list. If you received your account through an Oracle Trial, your Trial confirmation email should provide a URL that will pre-select the region for you._
 
   ![](images/100/index.png)
 
-- **IMPORTANT** - Under my services, select from the drop down list the correct data center and click on **My Services**. If you are unsure of the data center you should select, and this is an in-person training event, **_ask your instructor_** which **Region** to select from the drop down list. If you received your account through an Oracle Trial, your Trial confirmation email should provide a URL that will pre-select the region for you.
-
-  ![](images/100/index.png)
-
-- Enter your identity domain and click **Go**.
-
-  **NOTE:** The **Identity Domain, User Name** and **Password** values will be given to you by the instructor or Trial confirmation email.
-
-  ![](images/100/index.png)
-
-- Once your Identity Domain is set, enter your User Name and Password and click **Sign In**
+- Enter your User Name and Password and click **My Services**
 
   **NOTE:** For this lab you will assume the role of Javascript Developer **_Lisa Jones_**. Although you are assuming the identify of Lisa Jones, you will log into the account using the **username** provided to you by your instructor, given to you by your corporation, or supplied to you as part of an Oracle Trial. As you progress through the workshop, you will remain logged in as a single user, but you will make “logical” changes from Lisa Jones the Javascript Developer to other personas.
 
@@ -70,15 +68,13 @@ architecture.
 
 - From the Cloud UI dashboard click on the **Visual Builder** service.
 
-  ![](images/100/index.png)
+  ![](images/100/dashboardVBCS.png)
 
 - The Service Details page gives you a quick glance of the service status overview.
 
-  ![](images/100/index.png)
-
 - Click **Open Service Console** for the Oracle Visual Builder Cloud Service. The Service Console will then list all Visual Applications.
 
-  ![](images/100/index.png)
+  ![](images/100/openServiceConsole.png)
 
 ### **STEP 4**: Create Visual Application
 
@@ -94,7 +90,8 @@ architecture.
   - Description: Tutorial application
 
   - The Application ID text field is automatically populated as you type based on the Application Name.
-    ![](images/100/index.png)
+
+    ![](images/100/nameApp.png)
 
 - You now have a new application, in which you can begin building pages and adding data.
 
@@ -211,7 +208,7 @@ Now that we have data for our app to display we can build our web app to display
 
   ![](images/100/firstLiveView.png)
 
-Our app is displaying our data but our inventory/reserved counts aren't labeled. Let's fix that so users will know what these numbers mean. To do that we can customize the data displayed in our list view.
+Our app is displaying our data but our inventory/reserved counts aren't labeled. Let's add labels so users will know what these numbers mean. To do that we can customize the data displayed in our list view.
 
 - Leave the live view and return to the design view of your app. Select an item in the list so that it is highlighted with a blue border and a **List Item** tag.
 
