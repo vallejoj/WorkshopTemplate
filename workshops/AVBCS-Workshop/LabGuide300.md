@@ -1,5 +1,5 @@
 ![](images/Picture-Title.png)  
-Updated: Jun 28, 2018
+Updated: July 9, 2018
 
 ## Introduction
 
@@ -14,7 +14,7 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 ## Required Artifacts
 
-- This lab assumes that you have completed the previous labs in this series and created the items covered in those labs. If you have not, download the `DemoWSApp_MobileLabImport.zip` file and after creating an application in VBCS import the zip file provided to set up the items created in the previous labs.
+- This lab assumes that you have completed the previous labs in this series and created the items covered in those labs. If you have not, download the `DemoWSApp_MobileLabImport.zip` file and after creating an application in VBCS(instructions found in lab 100), import the zip file provided to set up the items created in the previous labs.
 
 # Create a Mobile Application
 

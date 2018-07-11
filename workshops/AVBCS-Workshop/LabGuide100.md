@@ -5,7 +5,7 @@ Updated: June 27, 2018
 
 This is the first of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This workshop will walk you through creating applications for web and mobile from the browser using a visual development environment.
 
-You will take on 2 Personas during the workshop. The **Javascript Developer Persona** will create the web application and add the associated business data. The Javascript Developer will then create the mobile application and link it to the web applications existing business data. The **IT Security Analyst Persona** will implement access controls in the applications and configure user accounts to allow access to the applications. During the workshop, you will get an overview of Oracle Autonomous Visual Builder Cloud Service and its features.
+You will take on the Persona of **Javascript Developer** during the workshop. You will create the web application and add the associated business data. You will then create the mobile application and link it to the web applications existing business data. During the workshop you will get an overview of Oracle Autonomous Visual Builder Cloud Service and its features.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
@@ -13,7 +13,7 @@ You will take on 2 Personas during the workshop. The **Javascript Developer Per
 
 - Begin Creating a Web Application
   - Create application within Visual Builder user interface
-  - Add busines data for application to display
+  - Add business data for application to display
 - Create the Application Pages
   - Create pages for displaying business data
   - Create pages for creating and editing business data
