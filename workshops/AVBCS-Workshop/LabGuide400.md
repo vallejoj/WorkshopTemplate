@@ -9,17 +9,39 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 ## Objectives
 
+- Create a mobile page for viewing inventory item details
 - Add a REST Service Connection to the application
 - Incorporate data retrieved from Service Connection into application
-- Create a mobile page for viewing inventory item details
 
 ## Required Artifacts
 
 - This lab assumes that you have completed the previous labs in this series and created the items covered in those labs. If you have not, download the `DemoWSApp_MobileLabImport_2.zip` file and after creating an application in VBCS(instructions found in lab 100), import the zip file provided to set up the items created in the previous labs.
 
-# Add REST Service Connection
+# Add a Inventory Details Mobile Page
 
-### **STEP 1**: Create Service Connection
+- Next we'll add a page to display inventory item details and once that is complete we'll incorporate data retrieved from a third party REST endpoint.
+
+- To begin adding the **Details**, open the **main-start** page where we have a list of the inventory items. Open the **Page Structure** panel by clicking the icon that resembles a diagram above the component list. This will make it easy to see all the components and select the **List View** component which we will work with next.
+
+  ![](images/400/pageStructureIcon.png)
+
+- With the **List View** component selected, open the **Quick Start** tab in the right panel and select **Add Detail Page**.
+
+  ![](images/400/addDetailPage.png)
+
+- Select the GET endpoint of the Inventory Business Object and click **Next**.
+
+  ![](images/400/getInventoryEndpoint.png)
+
+- On the **Page Details** step, select the following items in the order listed and then click **Finish**.
+  - Name
+  - Variant
+  - Inventory
+  - Reserved
+
+* After selecting the **List View** component from the **Page Structure** list you can close the **Page Structure** panel again by clicking on the icon again to regain screen space.
+
+# Add REST Service Connection
 
 - If you are not already, log in to the Visual Builder Cloud Service(instructions on how to do so are in Lab 100)
 
@@ -37,7 +59,7 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 - Leave "GET" the **Method** dropdown menu. Next, enter the following address in the URL field:
 
-  `http://jsonplaceholder.typicode.com/photos/1`
+  `http://jsonplaceholder.typicode.com/posts/1`
 
 - Select "Retrieve One" in the **Action Hint** dropdown menu, then click **Next**. (For this example we will be doing a simple GET request returning one record)
 
@@ -63,6 +85,6 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
   ![](images/400/photosConnectionTab.png)
 
-### **STEP 2**: Title of Step 2
+### **STEP 3**: Title of Step 3
 
-- Instructions for Step 2
+- Instructions for Step 3
