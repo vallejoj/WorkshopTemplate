@@ -114,6 +114,96 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 - Now that the connection is configured we'll add the response data to our detail page. To do so we'll set up a variable on the page to store the response and define an action to call the connection for the data.
 
-### Displaying Date Retrieved from a REST Call
+### Displaying Data Retrieved from a REST Call
 
-- First we'll need to set up a variable on our page to hold the response data from the REST call.
+- First we'll need to set up a variable on our page to hold the response data from the REST call. VBCS comes with built in variable types but it also allows us to define our own custom types. The response from a REST call is a great use case for these custom type definitions. We'll create a new type from our service connection response structure which will be the type we use for our variable. So to summarize we will need to:
+  - Define a variable type based on the REST response
+  - Define a variable to hold our response data
+  - Create an **Action Chain** that retrieves our data and assigns it to the variable
+  - Configure an event that will trigger our action chain and make the data availabe via the variable
+
+## Define Custom Variable Type
+
+- In the left panel of our developer console, select **main** under **inventoryMobileApp > flows** and then once on the **main** flow, select the **(x)** icon to display the variables of that flow.
+
+  ![](images/400/mainContainer.png)
+
+- Select the **Types** tab and click the **+ Type** button on the right and click **From Endpoint**.
+
+  ![](images/400/typesTab.png)
+
+  ![](images/400/typeEndpoint.png)
+
+- For the type's endpoint expand **Service Connections > Posts** and choose **GET /1** and click **Next**.
+
+  ![](images/400/defineTypeEndpoint.png)
+
+- In the **Endpoint Structure** step, check the box next to **{}Response** to select all the items in the response structure. Click **Finish**.
+
+  ![](images/400/endpointStructure.png)
+
+## Create Variable
+
+- We now have our type that will be used in our variable definition, let's set up our variable. Go back to the **Variables** tab and click on the **+ Variable** button to begin creating a variable. In the **New Variable** window that opens, enter `itemDescription` as the new variable's Id and choose our newly created **get1** from the dropdown menu as the type, then click **Create**.
+
+  ![](images/400/newVariableDefinition.png)
+
+- You'll now see the variable listed in the **Main** flow's variable list. This gives us a place to store the retrieved data and a reference we can use to store it and retrieve it from the app.
+
+## Define Action Chain
+
+- Now that the variable which will hold our response is created we can define the **Action Chain** that will retrieve the data from our **Service Connection** and store it in the variable.
+
+- Click on the icon that resembles a flag to open **Actions** and click the **+ Actions Chain** button.
+
+  ![](images/400/actionsIcon.png)
+
+- Set the Id of the action chain as `retrieveItemDescription` and click **Create**.
+
+  ![](images/400/newActionChain.png)
+
+- You should now see the **Action Chain** configuration tab displayed. This is where we'll set the steps it should perform.
+
+  ![](images/400/actionChainConfig.png)
+
+- For our purposes we'll need two steps, first call a REST endpoint and second, assign the response to a variable. You'll see on the left, there is a panel of pre-created action templates ready to use that we can drag onto the chain. Drag the icon for **Call Rest Endpoint** onto the "plus sign under the **Start** icon in the chain.
+
+  ![](images/400/addRestToChain.png)
+
+- In the right panel there will be a button for selecting the endpoint, click that button to open the endpoint configuration. In the **Select Endpoint** window, expand **Service Connections > Posts** and select **GET** then click **Select**.
+
+  ![](images/400/endpointSelection.png)
+
+- For the next step in the chain, we'll assign the response to our variable. In the list of action templates in the left panel, drag **Assign Variables** onto the plus sign at the bottom of the chain.
+
+  ![](images/400/addAssignVarToChain.png)
+
+- Once that's added to our chain the right panel will have the assignments configurations options. There is a link to open the assignment window accessable via the **Assign** text next to the Variables heading in the right panel. Clicking this will open the **Map Variables To Parameters** window.
+
+  ![](images/400/assignLink.png)
+
+- Under the **Sources** column on the left, click and drag "callRestEndpoint1" over to the **Target** column on the right hovering over "itemDescription" before releasing. When you drop it on the "itemDescription" you should get a line drawn between the items. Click **Save**.
+
+  ![](images/400/mapVariables.png)
+
+## Bind Action Chain to App Event
+
+- The action chain is now ready to do it's work, now we'll tell our app what event should be used to trigger this action chain. Click on the **Main** tab and then click the **Events** icon that resembles a bell. Once on the **Events** page, click the **+ Event Listener** button to begin linking our action chain to an event.
+
+  ![](images/400/eventsIcon.png)
+
+- VBCS exposes several Lifecycle Events for us to make use of in our app. In the **Select Event** window choose **vbEnter** and click **Select**. This event will fire as soon as the app enters this **main** flow.
+
+  ![](images/400/vbEnterEvent.png)
+
+- Next select our action chain "retrieveItemDescription" and click **Select**.
+
+  ![](images/400/selectActionChain.png)
+
+- Our pieces are all tied together, when the app enters this main flow it will trigger our action chain that in turn calls our service connection and stores the response of that call in our variable. All that's left to do now is display the data stored in the variable in our app.
+
+## Display REST Response Variable Data
+
+- Navigate back to the **Mobile App** section of the development console and expand **inventoryMobileApp > flows > main** and select our **InventoryDetail** page.
+
+  ![](images/400/inventoryDetailPage.png)
