@@ -1,32 +1,3 @@
-# Tips for Workshop Developers - Virtual Workshop
-
-## Steps for creating a new workshop
-
-- To start a new workshop, use git to create a branch from this (workshop-template) branch.
-- Rename the workshop-template folder in your new branch to the title of your new workshop, observing the naming convention of the rest of the folders in the repository
-- Rename the lab guide md files to be more specific to your workshop, if desired.
-- Update manifest.json with the titles and descriptions of your labs (and md filenames if you changed them).
-- Select theme choice for your manifest.json - current choices are: "default", "ttc"
-- Update the manifest.json with your interactive tour link (Note that by removing this in the JSON the tour launcher will be hidden)
-- Use LabGuide100.md as an example of how to format and structure your lab's markdown.
-- Preview your lab guides by loading index.html in your favorite editor's live view (Brackets - Live Preview, Atom - atom-live-server)
-
-## Supporting Files
-
-- README
-  - The README.md file (this file) should give a clear step-by-step overview of what the student should do to complete the workshop, beginning with any prerequisite checks or software installation (detailed in the Student Guide)
-  - **Do not include this 'Tips for Workshop Developers' section in the final workshop readme**
-  - An example readme follows these tips, it can be modified for your workshop
-- Student Guide
-  - An example student guide has been provided, but it should be modified for the requirements of this workshop.
-  - It should document where to get and how to install any required software
-  - Any networking settings likely to need attention should be discussed in the guide
-- Images
-  - Store lab images under the images/x00 folder corresponding to the lab number they belong to.
-  - Images that are used in multiple lab guides can be stored directly in the images/ folder.
-
-# Example Readme:
-
 ## IMPORTANT: How to prepare for this workshop
 
 **First**, **_Get an Oracle Cloud Account_**
@@ -38,67 +9,62 @@
 
 ## How to View the Lab Guides
 
-- The Labguides are best viewed using the Workshop's [GitHub Pages Website URL](https://derekoneil.github.io/cloud-native-devops-workshop/microservices)
+- The Lab Guides are best viewed using the Workshop's [GitHub Pages Website URL](#)
 
 - Once you are viewing the Workshop's GitHub Pages website, you can see a list of Lab Guides at any time by clicking on the **Menu Icon**
 
   ![](images/WorkshopMenu.png)
 
-- To log issues and view the Lab Guide source, go to the [github oracle](https://github.com/) repository.
+- To log issues and view the Lab Guide source, go to the [github oracle](https://github.com/oracle) repository.
 
-- Visit the [Workshop Interactive Labguide](http://launch.oracle.com/?cloudnative) for a visual overview of the workshop content.
+- Visit the [Workshop Interactive Lab Guide](http://launch.oracle.com/) for a visual overview of the workshop content.
 
-## DevOps and Cloud Native Microservices Workshop
+## Low Code Application Development
 
-This Oracle Public Cloud DevOps Cloud Native Microservices workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project, during which you will create and use several Microservices. During this workshop you will take on the role of 3 personae. As the first persona - the Project Manager - youwill create the projects, add tasks and features to be worked on, and assign tasks to developers. The Project Manager will then start the initial sprint. The Java Developer persona will develop a new twitter feed service that will allow for retrieval and filtering of twitter data. The JavaScript Developer persona will develop a new Twitter Marketing UI that will display the twitter data to allow for analysis. During the workshop, you will get exposure to Oracle Developer Cloud Service and Oracle Application Container Cloud Service.
+This Oracle Public Cloud Low Code Application Development workshop will walk you through the creation of a web and mobile application, during which you will create and customize an application with visual development tools.
 
 ## Workshop Details
 
 **Reference the following Lab Guides by opening their Documentation Files:**
 
-## Lab 100: Agile Project Management
+## Lab 100: Creating a Visual Builder Application and Displaying Business Data
 
-**Documenation**: [LabGuide100.md](LabGuide100.md)
-
-### Objectives
-
-- Create Initial Project
-  - Add Users to Project
-- Create Product Issues
-  - Create Issues for Twitter Feed Microservice
-  - Create Issues for Twitter Feed Marketing UI
-- Create Agile Board and initial Sprint
-- Add Issues to Sprint
-
-## Lab 200: Continuous Delivery of Java Microservices
-
-**Documenation**: [LabGuide200.md](LabGuide200.md)
+**Documentation**: [LabGuide100.md](LabGuide100.md)
 
 ### Objectives
 
-- Access Developer Cloud Service
-- Import Code from external Git Repository
-- Import Project into Eclipse
-- Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service
+- Begin Creating a Web Application
+  - Create application within Visual Builder user interface
+  - Add business data for application to display
+- Create the Application Pages
+  - Create pages for displaying business data
+  - Create pages for creating and editing business data
 
-## Lab 300: Cloud Native Rapid Javascript Devlopment with node.js
+## Lab 200: Adding Update and Edit Pages to the Web Application
 
-**Documenation**: [LabGuide300.md](LabGuide300.md)
-
-### Objectives
-
-- Access Developer Cloud Service
-- Import Code from external Git Repository
-- Import Project into Brackets
-- Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service
-
-## Lab 400: Cloud Native Develper Cloud Service Administration
-
-**Documenation**: [LabGuide400.md](LabGuide400.md)
+**Documentation**: [LabGuide200.md](LabGuide200.md)
 
 ### Objectives
 
-- Access Developer Cloud Service
-- Complete Sprint
-- Run Backlog and Sprint Reports
-- Review Administrative Tasks
+- Create Pages to Add and Edit Content
+  - Create a page to add data
+  - Create a page to edit data
+
+## Lab 300: Creating a Mobile Application
+
+**Documentation**: [LabGuide300.md](LabGuide300.md)
+
+### Objectives
+
+- Create a mobile application
+- Create mobile pages for an inventory items list and inventory items detail
+
+## Lab 400: Incorporating REST Data into the Application
+
+**Documentation**: [LabGuide400.md](LabGuide400.md)
+
+### Objectives
+
+- Create a mobile page for viewing inventory item details
+- Add a REST Service Connection to the application
+- Incorporate data retrieved from Service Connection into application

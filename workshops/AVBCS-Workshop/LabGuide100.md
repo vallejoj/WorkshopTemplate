@@ -1,11 +1,16 @@
-![](images/Picture-Title.png)  
-Updated: June 27, 2018
+![](images/Picture-Title.png)
+
+# Lab 100 - Creating a Visual Builder Application and Displaying Business Data
+
+Updated: July 16, 2018
 
 ## Introduction
 
 This is the first of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This workshop will walk you through creating applications for web and mobile from the browser using a visual development environment.
 
 You will take on the Persona of **Javascript Developer** during the workshop. You will create the web application and add the associated business data. You will then create the mobile application and link it to the web applications existing business data. During the workshop you will get an overview of Oracle Autonomous Visual Builder Cloud Service and its features.
+
+In this first lab you will create a Visual Builder application and add business data to display.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
@@ -45,7 +50,7 @@ You will take on the Persona of **Javascript Developer** during the workshop. Yo
 
   **NOTE:** For this lab you will assume the role of Javascript Developer **_Lisa Jones_**. Although you are assuming the identify of Lisa Jones, you will log into the account using the **username** provided to you by your instructor, given to you by your corporation, or supplied to you as part of an Oracle Trial. As you progress through the workshop, you will remain logged in as a single user, but you will make “logical” changes from Lisa Jones the Javascript Developer to other personas.
 
-  ![](images/lisa.png)
+  ![](images/100/lisa.png)
 
   ![](images/100/index.png)
 
@@ -76,7 +81,7 @@ architecture.
 
   ![](images/100/openServiceConsole.png)
 
-### **STEP 4**: Create Visual Application
+### **STEP 3**: Create Visual Application
 
 - Click **New** to start the application create wizard.
 
@@ -99,7 +104,7 @@ architecture.
 
 # Import Business Data
 
-### **STEP**: Import Files containing business data
+### **STEP 1**: Import Files containing business data
 
 #### Create Business Objects by Importing the Inventory Data
 
@@ -141,7 +146,7 @@ In this step you are assuming the identity of the Javascript, **_Lisa Jones_**.
 
 - After selecting either business object, you can go to the **Data** tab to verify or edit the data imported.
 
-### **STEP Creating the Web App**:
+### **STEP 2 Creating the Web App**:
 
 Now that we have data for our app to display we can build our web app to display and modify that data.
 
@@ -210,3 +215,7 @@ Our app is displaying our data but our inventory/reserved counts aren't labeled.
 * Now our app displays a list of the available wines with their inventory count and reserved count.
 
   ![](images/100/liveCountsLabeled.png)
+
+# Summary
+
+We have now created an application in Autonomous Visual Builder Cloud Service, added our business data. The next lab in the series will guide us through adding update and edit features to allow the app's users to update inventory counts from the app.

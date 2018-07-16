@@ -1,27 +1,34 @@
-![](images/Picture-Title.png)  
-Updated: June 27, 2018
+![](images/Picture-Title.png)
+
+# Lab 200 - Adding Update and Edit Pages to the Web Application
+
+Updated: July 16, 2018
 
 ## Introduction
 
-This is the second of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This workshop will walk you through creating applications for web and mobile from the browser using a visual development environment.
+This is the second of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This lab will walk you through adding pages to your application for adding data and editing data.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Objectives
 
 - Create Pages to Add and Edit Content
-  - Create a page to add data
-  - Create a page to edit data
+  - Create a page to allow users to add data
+  - Create a page to allow users to edit data
 
 ## Required Artifacts
 
 - The following lab requires an Oracle Public Cloud account that will be supplied by your instructor.
 
+- This lab assumes that you have completed the previous lab in this series.
+
 # Add Create and Edit Pages
 
-Now that we have a display of our data, the next step is to allow additions and edits to that data. This will allow users to add new wines as they become available and edit the inventory/reserved counts. Oracle Autonomous Visual Builder makes this very easy with the **Quick Start** menu we accessed earlier.
+Now that we have a display of our data, the next step is to allow additions and edits to that data. This will allow users to add new wines as they become available and edit the inventory/reserved counts.
 
-- In the **Designer View** of our app, click inside the list component but outside an individual item so that the List is selected and the **List View** tag is displayed.
+### Add Create Page
+
+- Oracle Autonomous Visual Builder makes adding pages for updating and editing data very easy with the **Quick Start** menu we accessed earlier. In the **Designer View** of our app, click inside the list component but outside an individual item so that the List is selected and the **List View** tag is displayed.
 
 ![](images/200/listSelected.png)
 
@@ -64,6 +71,8 @@ With this page created we can toggle live mode right in the app editor to intera
   ![](images/200/pageTabs.png)
 
 - Back in the **main-start** page you'll see our new entry is added to the list, and also note that there is a new **Create** button which was added for us by using the **Quick Start** guide to make our new create page. This is a major advantage to using the quick start guide for creating new pages, it will make buttons for us that will link to our new pages.
+
+### Add Edit Page
 
 - Now lets use the **Quick Start** guide to add an **Edit** page and a **Delete** button to our app's main page. Once again, click on the **List** component outside of a specific item so that the **List View** tag appears.
 

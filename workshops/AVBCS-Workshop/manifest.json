@@ -1,47 +1,46 @@
 {
-    "workshop": {
-        "title": "Workshop Title",
-        "description": "Description of this workshop.",
-        "theme": "default",
-        "interactive":"https://launch.oracle.com/?",
-        "labs": [
-            {
-                "number": "0",
-                "filename": "Intro-Instructor-Led.md",
-                "title": "Intro - Instructor Led",
-                "description": "Step-by-step workshop instructions"
-
-            },
-            {
-                "number": "100",
-                "filename": "LabGuide100.md",
-                "title": "Lab 100: Agile Project Management, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage.",
-                "description": "Use Developer Cloud Service to create issues, tasks, and sprints, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage."
-
-            },
-            {
-                "number": "200",
-                "filename": "LabGuide200.md",
-                "title": "Lab 200:  Title of Lab 200",
-                "description": "Short description of lab 200"
-
-            },
-            {
-                "number": "300",
-                "filename": "LabGuide300.md",
-                "title": "Lab 300:  Title of Lab 300",
-                "description": "Short description of lab 300"
-
-            },
-            {
-                "number": "400",
-                "filename": "LabGuide400.md",
-                "title": "Lab 400: Title of Lab 400",
-                "description": "Short description of lab 400"
-
-            }
-
-
-        ]
-    }
+  "workshop": {
+    "title": "Low Code Application Development",
+    "description":
+      "This is the first of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This workshop will walk you through creating applications for web and mobile from the browser using a visual development environment.",
+    "theme": "default",
+    "interactive": "https://launch.oracle.com/?",
+    "labs": [
+      {
+        "number": "0",
+        "filename": "ReadMe.md",
+        "title": "README",
+        "description": "Workshop Overview"
+      },
+      {
+        "number": "100",
+        "filename": "LabGuide100.md",
+        "title":
+          "Lab 100: Creating a Visual Builder Application and Displaying Business Data",
+        "description":
+          "In this first lab you will create a Visual Builder application and add business data to display. "
+      },
+      {
+        "number": "200",
+        "filename": "LabGuide200.md",
+        "title": "Lab 200: Adding Update and Edit Pages to the Web Application",
+        "description":
+          "This lab will walk you through adding pages to your application for adding data and editing data."
+      },
+      {
+        "number": "300",
+        "filename": "LabGuide300.md",
+        "title": "Lab 300: Creating a Mobile Application",
+        "description":
+          "This lab will walk you through creating a mobile application and displaying an inventory list."
+      },
+      {
+        "number": "400",
+        "filename": "LabGuide400.md",
+        "title": "Lab 400: Incorporating REST Data into the Application",
+        "description":
+          "This lab will walk you through creating a mobile application page for viewing an inventory item's details and also incorporating REST service data into the mobile application."
+      }
+    ]
+  }
 }

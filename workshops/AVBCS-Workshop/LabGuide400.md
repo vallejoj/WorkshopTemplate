@@ -1,9 +1,12 @@
-![](images/Picture-Title.png)  
-Updated: July 10, 2018
+![](images/Picture-Title.png)
+
+# Lab 400 - Incorporating REST Data into the Application
+
+Updated: July 16, 2018
 
 ## Introduction
 
-This lab is one of a series which provides an overview of Oracle Autonomous Visual Builder Cloud Service(VBCS).
+This is the fourth of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This lab will walk you through creating a mobile application page for viewing an inventory item's details and also incorporating REST service data into the mobile application. We will be using the mobile application here to display the REST but if you would like to use a AVBCS web application the steps are similar.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
@@ -15,11 +18,15 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 ## Required Artifacts
 
+- The following lab requires an Oracle Public Cloud account that will be supplied by your instructor.
+
 - This lab assumes that you have completed the previous labs in this series and created the items covered in those labs. If you have not, download the `DemoWSApp_MobileLabImport_2.zip` file and after creating an application in VBCS(instructions found in lab 100), import the zip file provided to set up the items created in the previous labs.
 
-# Add a Inventory Details Mobile Page
+# Create Mobile Pages for Inventory Details
 
-- Next we'll add a page to display inventory item details and once that is complete we'll incorporate data retrieved from a third party REST endpoint.
+Next we'll add a page to display inventory item details and once that is complete we'll incorporate data retrieved from a third party REST endpoint.
+
+### Add a Inventory Details Mobile Page
 
 - To begin adding the **Details**, open the **main-start** page where we have a list of the inventory items. Open the **Page Structure** panel by clicking the icon that resembles a diagram above the component list. This will make it easy to see all the components and select the **List View** component which we will work with next.
 
@@ -68,7 +75,7 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 - Our next steps will involve adding data to this detail page which is retrieved from an external REST service.
 
-# Add REST Service Connection
+### Add REST Service Connection
 
 - We will now add the Service Connection through which data will be retrieved from an external REST endpoint. If you are not already, log in to the Visual Builder Cloud Service(instructions on how to do so are in Lab 100).
 
@@ -114,15 +121,16 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 - Now that the connection is configured we'll add the response data to our detail page. To do so we'll set up a variable on the page to store the response and define an action to call the connection for the data.
 
-### Displaying Data Retrieved from a REST Call
+# Displaying Data Retrieved from a REST Call
 
-- First we'll need to set up a variable on our page to hold the response data from the REST call. VBCS comes with built in variable types but it also allows us to define our own custom types. The response from a REST call is a great use case for these custom type definitions. We'll create a new type from our service connection response structure which will be the type we use for our variable. So to summarize we will need to:
-  - Define a variable type based on the REST response
-  - Define a variable to hold our response data
-  - Create an **Action Chain** that retrieves our data and assigns it to the variable
-  - Configure an event that will trigger our action chain and make the data availabe via the variable
+There are a few steps to integrating REST data into our app. First we'll need to set up a variable on our page to hold the response data from the REST call. VBCS comes with built in variable types but it also allows us to define our own custom types. The response from a REST call is a great use case for these custom type definitions. We'll create a new type from our service connection response structure which will be the type we use for our variable. So to summarize we will need to:
 
-## Define Custom Variable Type
+- Define a variable type based on the REST response
+- Define a variable to hold our response data
+- Create an **Action Chain** that retrieves our data and assigns it to the variable
+- Configure an event that will trigger our action chain and make the data available via the variable
+
+### Define Custom Variable Type
 
 - In the left panel of our developer console, select **main** under **inventoryMobileApp > flows** and then once on the **main** flow, select the **(x)** icon to display the variables of that flow.
 
@@ -142,7 +150,7 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
   ![](images/400/endpointStructure.png)
 
-## Create Variable
+#### Create Variable
 
 - We now have our type that will be used in our variable definition, let's set up our variable. Go back to the **Variables** tab and click on the **+ Variable** button to begin creating a variable. In the **New Variable** window that opens, enter `itemDescription` as the new variable's Id and choose our newly created **get1** from the dropdown menu as the type, then click **Create**.
 
@@ -150,7 +158,7 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 - You'll now see the variable listed in the **Main** flow's variable list. This gives us a place to store the retrieved data and a reference we can use to store it and retrieve it from the app.
 
-## Define Action Chain
+### Define Action Chain
 
 - Now that the variable which will hold our response is created we can define the **Action Chain** that will retrieve the data from our **Service Connection** and store it in the variable.
 
@@ -186,7 +194,7 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
   ![](images/400/mapVariables.png)
 
-## Bind Action Chain to App Event
+### Bind Action Chain to App Event
 
 - The action chain is now ready to do it's work, now we'll tell our app what event should be used to trigger this action chain. Click on the **InventoryDetail** tab (or if it's closed, open from the panel on the left) and then drag a button from the components column onto the page between the image and the list components. In the button's configuration panel on the right side change the **Text** from "button" to "More Info" and choose the "Full" chroming option to make our button stand out a little more. Next click the **Events** tab. Once on the **Events** page, click the **+ Event Listener** button to begin linking our action chain to an event.
 
@@ -206,7 +214,7 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 - Our pieces are all tied together, when the button is clicked on the inventory detail page it will trigger our action chain that in turn calls our service connection and stores the response of that call in our variable. All that's left to do now is display the data stored in the variable in our app.
 
-## Display REST Response Variable Data
+### Display REST Response Variable Data
 
 - Navigate back to the **Mobile App** section of the development console and expand **inventoryMobileApp > flows > main** and select our **InventoryDetail** page.
 

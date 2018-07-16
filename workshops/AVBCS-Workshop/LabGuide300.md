@@ -1,18 +1,23 @@
-![](images/Picture-Title.png)  
-Updated: July 9, 2018
+![](images/Picture-Title.png)
+
+# Lab 300 - Creating a Mobile Application
+
+Updated: July 16, 2018
 
 ## Introduction
 
-This lab is one of a series which provides an overview of Oracle Autonomous Visual Builder Cloud Service(VBCS).
+This is the third of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This lab will walk you through creating a mobile application and displaying inventory data.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Objectives
 
 - Create a mobile application
-- Create mobile pages for editing data
+- Create mobile pages for an inventory items list and inventory items detail
 
 ## Required Artifacts
+
+- The following lab requires an Oracle Public Cloud account that will be supplied by your instructor.
 
 - This lab assumes that you have completed the previous labs in this series and created the items covered in those labs. If you have not, download the `DemoWSApp_MobileLabImport.zip` file and after creating an application in VBCS(instructions found in lab 100), import the zip file provided to set up the items created in the previous labs.
 
@@ -38,7 +43,7 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
 ### **STEP 2**: Add Mobile App Pages
 
-- At this point you should be seeing a view of your mobile application in the development console. We'll now begin adding pages to display and edit our business data.
+- At this point you should be seeing a view of your mobile application in the development console. We'll now begin adding pages to display an inventory overview and item details.
 
 ![](images/300/mobileView.png)
 
@@ -46,7 +51,7 @@ The steps to add pages will be familiar if you have completed the web applicatio
 
 The main page for our application is created for us automatically by AVBCS so we will begin by adding components to display our data.
 
-- From the component list, drag a **List View** over the our mock phone and drop it on the page.
+- From the component list, drag a **List View** over to the mock phone and drop it on the page.
 
   ![](images/300/mobileListComponent.png)
 
@@ -58,23 +63,23 @@ The main page for our application is created for us automatically by AVBCS so we
 
   ![](images/300/addPage.png)
 
-- There are several steps for selecting data for our list:
+- VBCS assists us in selecting data for our list:
 
-  - For **Select Endpoint** expand **Business Objects** > **Inventory** and select the **GET /Inventory** entry, then click **Next**.
+- For **Select Endpoint** expand **Business Objects** > **Inventory** and select the **GET /Inventory** entry, then click **Next**.
 
-  ![](images/300/inventoryEndpoint.png)
+![](images/300/inventoryEndpoint.png)
 
-  - For **Choose Template** we will use the default template which is at the top of the list and then click **Next**.
+- For **Choose Template** we will use the default template which is at the top of the list and then click **Next**.
 
-  ![](images/300/defaultTemplate.png)
+![](images/300/defaultTemplate.png)
 
-  - For our **Fields** we will select data from the **Endpoint Structure** and drag them into the **Fields** boxes. Drag the following items into the listed Field and then click **Next**:
-    - "title1": name
-    - "title2": variant
-    - "value1": quantity
-    - "value2": reserved
+- For our **Fields** we will select data from the **Endpoint Structure** and drag them into the **Fields** boxes. Drag the following items into the listed Field and then click **Next**:
+  - "title1": name
+  - "title2": variant
+  - "value1": quantity
+  - "value2": reserved
 
-  ![](images/300/dataFields.png)
+![](images/300/dataFields.png)
 
 - We don't need to define a query for our data, so we can click **Finish**.
 
@@ -86,7 +91,7 @@ The main page for our application is created for us automatically by AVBCS so we
 
 Our app is displaying our data but our inventory/reserved counts aren't labeled. Let's add labels so users will know what these numbers mean. To do that we can customize the data displayed in our list view.
 
-- Leave the live view and return to the design view of your app. Select an item in the list so that it is highlighted with a blue border and a **List Item** tag.
+- Exit **Live** mode and return to the design view of your app. Select an item in the list so that it is highlighted with a blue border and a **List Item** tag.
 
   ![](images/100/listItem.png)
 
@@ -98,6 +103,6 @@ Our app is displaying our data but our inventory/reserved counts aren't labeled.
 
   `[["Reserved: " + $current.data.reserved]]`
 
-* Now our app displays a list of the available wines with their inventory count and reserved count.
+* Now our app displays a list of the available wines with their labeled inventory count and reserved count.
 
   ![](images/300/countsLabeled.png)
