@@ -182,28 +182,45 @@ This lab is one of a series which provides an overview of Oracle Autonomous Visu
 
   ![](images/400/assignLink.png)
 
-- Under the **Sources** column on the left, click and drag "callRestEndpoint1" over to the **Target** column on the right hovering over "itemDescription" before releasing. When you drop it on the "itemDescription" you should get a line drawn between the items. Click **Save**.
+- Under the **Sources** column on the left, expand "callRestEndpoint1" and drag "body" over and drop it onto the "itemDescription" under **Flow** in the **Target** column on the right . When you drop it on the "itemDescription" you should get a line drawn between the items. Click **Save**.
 
   ![](images/400/mapVariables.png)
 
 ## Bind Action Chain to App Event
 
-- The action chain is now ready to do it's work, now we'll tell our app what event should be used to trigger this action chain. Click on the **Main** tab and then click the **Events** icon that resembles a bell. Once on the **Events** page, click the **+ Event Listener** button to begin linking our action chain to an event.
+- The action chain is now ready to do it's work, now we'll tell our app what event should be used to trigger this action chain. Click on the **InventoryDetail** tab (or if it's closed, open from the panel on the left) and then drag a button from the components column onto the page between the image and the list components. In the button's configuration panel on the right side change the **Text** from "button" to "More Info" and choose the "Full" chroming option to make our button stand out a little more. Next click the **Events** tab. Once on the **Events** page, click the **+ Event Listener** button to begin linking our action chain to an event.
 
-  ![](images/400/eventsIcon.png)
+  ![](images/400/buttonText.png)
 
-- VBCS exposes several Lifecycle Events for us to make use of in our app. In the **Select Event** window choose **vbEnter** and click **Select**. This event will fire as soon as the app enters this **main** flow.
+- VBCS allows us to quickly add events to our buttons. In the **Events** tab click **+ New Event** and choose "Quick Start: 'click' ". This will add a click event to the button.
 
-  ![](images/400/vbEnterEvent.png)
+  ![](images/400/addEventToButton.png)
+
+- Drag the **Call Action Chain** from the action collection panel on the left to the bottom of the chain and then click the **Select Action Chain** button in the right panel.
+
+  ![](images/400/buttonChain.png)
 
 - Next select our action chain "retrieveItemDescription" and click **Select**.
 
   ![](images/400/selectActionChain.png)
 
-- Our pieces are all tied together, when the app enters this main flow it will trigger our action chain that in turn calls our service connection and stores the response of that call in our variable. All that's left to do now is display the data stored in the variable in our app.
+- Our pieces are all tied together, when the button is clicked on the inventory detail page it will trigger our action chain that in turn calls our service connection and stores the response of that call in our variable. All that's left to do now is display the data stored in the variable in our app.
 
 ## Display REST Response Variable Data
 
 - Navigate back to the **Mobile App** section of the development console and expand **inventoryMobileApp > flows > main** and select our **InventoryDetail** page.
 
   ![](images/400/inventoryDetailPage.png)
+
+- Drag a "Text" component from the left column into the **Inventory Detail** page. You'll see a text box with a placeholder message of "Bind Text."
+
+- Now we'll set the text to be the data retrieved from the REST call.
+
+  - With the text box selected, hover over the "Value" field in the right panel and a small **(x)** will appear. Click that **(x)** to assign a variable to the text field.
+  - In the dropdown, expand **Flow > itemDescription** and select **body**. This will display the value in that variable on our Inventory detail page when when our button is clicked.
+
+  ![](images/400/textValue.png)
+
+- Let's test our button. Go back to the **main-start** page which lists our inventory items, enable **Live** mode by clicking on the "Live" button in the top right corner. Once in **Live** mode, click an item in the list, then when the **itemDetail** page loads test our button to verify it displays our new information.
+
+  ![](images/400/buttonPopulatedText.png)
