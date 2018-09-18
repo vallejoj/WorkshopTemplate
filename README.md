@@ -1,13 +1,24 @@
-## IMPORTANT: How to prepare for this workshop
+# Low Code Application Development
 
-**First**, **_Get an Oracle Cloud Account_**
+This Oracle Public Cloud Low Code Application Development workshop will walk you through the creation of a web and mobile application, during which you will create and customize an application with visual development tools.
 
-- Oracle provides several methods for gaining access to Oracle Cloud Accounts used to complete the Labs in this Hands-on-Workshop.
-  - For some workshop events, cloud environments will be provided.
-  - For others events (e.g. **Oracle Code**), or when completing this workshop in a self-service model, you must gain access to your own Trial account. Trial accounts can be obtained at [Try It](http://cloud.oracle.com/tryit)
-  - If you are attending an Oracle sponsored event, please **review your Event invitation** for more instruction on how to gain access to your Workshop Account.
+![](images/100/youtube.png)
 
-## How to View the Lab Guides
+<a href="<add link>" target="_video">Workshop Overview</a>
+
+### **Step 1**: Acquire an Oracle Cloud Trial Account
+
+- Bookmark this page for future reference.
+
+- Please click on the URL to create your <a href="https://myservices.us.oraclecloud.com/mycloud/signup?language=en&sourceType=:ex:tb:::RC_NAMK180824P00182:Chatbot_HOL&SC=:ex:tb:::RC_NAMK180824P00182:Chatbot_HOL&pcode=NAMK180824P00182" target="_trial">Free Account</a> and complete all the required steps. When you complete the registration process you'll receive a $300 credit that will enable you to complete the lab for free. Additionally, you'll have 1000s of hours left over to continue to explore the Oracle Cloud.
+
+  - Soon after requesting your trial you will receive the following email.
+
+  ![](images/100/code_9.png)
+
+### **Step 2**:
+
+## Proceed to the Lab Guides
 
 - The Lab Guides are best viewed using the Workshop's [GitHub Pages Website URL](https://ranched.github.io/WorkshopTemplate/)
 
@@ -18,10 +29,6 @@
 - To log issues and view the Lab Guide source, go to the [github oracle](https://github.com/oracle) repository.
 
 - Visit the [Workshop Interactive Lab Guide](http://launch.oracle.com/) for a visual overview of the workshop content.
-
-## Low Code Application Development
-
-This Oracle Public Cloud Low Code Application Development workshop will walk you through the creation of a web and mobile application, during which you will create and customize an application with visual development tools.
 
 ## Workshop Details
 
