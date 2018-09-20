@@ -16,9 +16,7 @@ This Oracle Public Cloud Low Code Application Development workshop will walk you
 
   ![](images/100/code_9.png)
 
-### **Step 2**:
-
-## Proceed to the Lab Guides
+### **Step 2**: Proceed to the Lab Guides
 
 - The Lab Guides are best viewed using the Workshop's [GitHub Pages Website URL](https://ranched.github.io/WorkshopTemplate/)
 
@@ -29,49 +27,3 @@ This Oracle Public Cloud Low Code Application Development workshop will walk you
 - To log issues and view the Lab Guide source, go to the [github oracle](https://github.com/oracle) repository.
 
 - Visit the [Workshop Interactive Lab Guide](http://launch.oracle.com/) for a visual overview of the workshop content.
-
-## Workshop Details
-
-**Reference the following Lab Guides by opening their Documentation Files:**
-
-## Lab 100: Creating a Visual Builder Application and Displaying Business Data
-
-**Documentation**: [LabGuide100.md](LabGuide100.md)
-
-### Objectives
-
-- Begin Creating a Web Application
-  - Create application within Visual Builder user interface
-  - Add business data for application to display
-- Create the Application Pages
-  - Create pages for displaying business data
-  - Create pages for creating and editing business data
-
-## Lab 200: Adding Update and Edit Pages to the Web Application
-
-**Documentation**: [LabGuide200.md](LabGuide200.md)
-
-### Objectives
-
-- Create Pages to Add and Edit Content
-  - Create a page to add data
-  - Create a page to edit data
-
-## Lab 300: Creating a Mobile Application
-
-**Documentation**: [LabGuide300.md](LabGuide300.md)
-
-### Objectives
-
-- Create a mobile application
-- Create mobile pages for an inventory items list and inventory items detail
-
-## Lab 400: Incorporating REST Data into the Application
-
-**Documentation**: [LabGuide400.md](LabGuide400.md)
-
-### Objectives
-
-- Create a mobile page for viewing inventory item details
-- Add a REST Service Connection to the application
-- Incorporate data retrieved from Service Connection into application
