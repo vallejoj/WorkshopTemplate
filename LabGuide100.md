@@ -2,17 +2,9 @@
 
 # Lab 100 - Creating a Visual Builder Application and Displaying Business Data
 
-Updated: July 16, 2018
-
 ## Introduction
 
-This is the first of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This workshop will walk you through creating applications for web and mobile from the browser using a visual development environment.
-
-You will take on the Persona of **Javascript Developer** during the workshop. You will create the web application and add the associated business data. You will then create the mobile application and link it to the web applications existing business data. During the workshop you will get an overview of Oracle Autonomous Visual Builder Cloud Service and its features.
-
-In this first lab you will create a Visual Builder application and add business data to display.
-
-**_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
+This is the first of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service Workshop.** During this workshop you will explore Oracle's Autonomous Visual Builder Cloud Service and its features from the persona of **Javascript Developer**, <add name>. You will follow <add name> as he creates a new web application, mobile application and links the mobile and web applications to the same business data in the Cloud. In our first lab you will create a Visual Builder application and add business data to display.
 
 ## Objectives
 
@@ -23,10 +15,6 @@ In this first lab you will create a Visual Builder application and add business 
   - Create pages for displaying business data
   - Create pages for creating and editing business data
 
-## Required Artifacts
-
-- The following lab requires an Oracle Public Cloud account that will be supplied by your instructor.
-
 # Create an Application in Oracle Autonomous Visual Builder Cloud Service
 
 ### **STEP 1**: Login to your Oracle Cloud Account
@@ -34,7 +22,7 @@ In this first lab you will create a Visual Builder application and add business 
 - From any browser, go to the URL:
   `https://cloud.oracle.com`
 
-- click **Sign In** in the upper right hand corner of the browser and on the next screen enter you Cloud Account Name.
+- Click **Sign In** in the upper right hand corner of the browser and on the next screen enter you Cloud Account Name.
 
 **NOTE:** The **Cloud Account Name, User Name** and **Password** values will be given to you by the instructor or Trial confirmation email.
 
