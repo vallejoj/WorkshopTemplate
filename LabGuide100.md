@@ -13,7 +13,7 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
   - Add business data for application to display
 - Create the Application Pages
   - Create pages for displaying business data
-  - Create pages for creating and editing business data
+  - Create pages for creating and editing business data 
 
 # Create an Application in Oracle Autonomous Visual Builder Cloud Service
 
