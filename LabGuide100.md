@@ -246,13 +246,21 @@ Our app is displaying our data but our inventory/reserved counts aren't labeled.
 
   ![](images/100/listItem.png)
 
-- In the detail panel on the right side, select the **General** tab. We can add our label to the data in the fields. We add the label as a quoted string inside the double square brackets. So the data in the "Value1" field will contain the following
+- In the detail panel on the right side, select the **General** tab.
+
+![](images/LabGuide100-b930c1a3.png)
+
+- We can add our label to the data in the fields. We add the label as a quoted string inside the double square brackets. So the data in the "Value1" field will contain the following
 
   `[["Inventory: " + $current.data.quantity]]`
 
   and the "Value2" field will have:
 
   `[["Reserved: " + $current.data.reserved]]`
+  
+  ![](images/LabGuide100-6a2979a3.png)
+
+
 
 * Now our app displays a list of the available wines with their inventory count and reserved count.
 
