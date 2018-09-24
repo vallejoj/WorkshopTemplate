@@ -13,7 +13,7 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
   - Add business data for application to display
 - Create the Application Pages
   - Create pages for displaying business data
-  - Create pages for creating and editing business data 
+  - Create pages for creating and editing business data
 
 # Create an Application in Oracle Autonomous Visual Builder Cloud Service
 
@@ -24,37 +24,37 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 - Click **Sign In** in the upper right hand corner of the browser and on the next screen enter you Cloud Account Name.
 
-**NOTE:** The **Cloud Account Name, User Name** and **Password** values will be given to you by the instructor or Trial confirmation email.
-
 ![](images/100/signIn.png)
 
 ![](images/100/signIn2.png)
 
-- **IMPORTANT** - _Under my services, select from the drop down list the correct data center and click on **My Services**. If you are unsure of the data center you should select, and this is an in-person training event, ***ask your instructor*** which **Region** to select from the drop down list. If you received your account through an Oracle Trial, your Trial confirmation email should provide a URL that will pre-select the region for you._
+- Enter your User Name and Password provided for your trial account and click **Sign In**
 
-  ![](images/100/index.png)
+    ![](images/100/idcs_login.png)
 
-- Enter your User Name and Password and click **My Services**
-
-  **NOTE:** For this lab you will assume the role of Javascript Developer **_Lisa Jones_**. Although you are assuming the identify of Lisa Jones, you will log into the account using the **username** provided to you by your instructor, given to you by your corporation, or supplied to you as part of an Oracle Trial. As you progress through the workshop, you will remain logged in as a single user, but you will make “logical” changes from Lisa Jones the Javascript Developer to other personas.
-
-  ![](images/100/lisa.png)
-
-  ![](images/100/index.png)
 
 - You will be presented with a Dashboard displaying the various cloud services available to this account.
 
-  ![](images/100/index.png)
+  ![](images/100/cloud_dash.png)
 
-- If all your services are not visible, **click** on the **Customize Dashboard**, you can add services to the dashboard by clicking **Show.** For this workshop, you will want to ensure that you are showing at least the **Application Container, Developer and Storage** cloud services. If you do not want to see a specific service, click **Hide**
+- If the Visual Builder Cloud Service does not appear in your list click the customize dashboard button.
 
-  ![](images/100/index.png)
+  ![](images/100/custom_dash.png)
+
+- Then select Visual Builder and click the show button.
+
+![](images/100/show_dash_vb.png)
+
+- Your should see the following before proceeding to the next step.
+
+![](images/100/LabGuide100-80c36c4c.png)
+
 
 ### **STEP 2**: Access the Oracle Autonomous Visual Builder Cloud Service
 
 Oracle Autonomous Visual Builder Cloud Service provides an easy way to
 create and host web and mobile applications in a secure cloud
-environment. An intuitive visual development experience on top of a
+environment. The intuitive visual development experience on top of a
 complete development and hosting platform accelerates application
 creation and provisioning, leveraging an open, standard-based
 architecture.
