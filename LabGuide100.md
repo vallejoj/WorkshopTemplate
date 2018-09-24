@@ -84,21 +84,24 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 - When you see the following screen you can proceed to the next step.
 
+![](images/LabGuide100-086b8273.png)
+
+### **STEP 3**: Access the Oracle Autonomous Visual Builder Cloud Service
+
+- Click on the **Hamburger** icon at the top of the page.
+
+![](images/LabGuide100-2df8d13a.png)
+
+- Select **Visual Builder** from the navigation menu.
+
+![](images/LabGuide100-a4e64280.png)
+
+- On the next screen open the **Visual Builder Hompage**.
+
+![](images/100/nav_to_vbcs.jpg)
 
 
-### **STEP 2**: Access the Oracle Autonomous Visual Builder Cloud Service
-
-- From the Cloud UI dashboard click on the **Visual Builder** service and select the hamburger menu.
-
-  ![](images/100/dashboardVBCS.png)
-
-- In the dropdown menu select **Open Service Console**.
-
-![](images/LabGuide100-03e55fdd.png)
-
-
-
-### **STEP 3**: Create Visual Application
+### **STEP 4**: Create Visual Application
 
 - Click **New** to start the application create wizard.
 
