@@ -52,22 +52,22 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 ### **STEP 2**: Access the Oracle Autonomous Visual Builder Cloud Service
 
-Oracle Autonomous Visual Builder Cloud Service provides an easy way to
-create and host web and mobile applications in a secure cloud
-environment. The intuitive visual development experience on top of a
-complete development and hosting platform accelerates application
-creation and provisioning, leveraging an open, standard-based
-architecture.
-
-- From the Cloud UI dashboard click on the **Visual Builder** service.
+- From the Cloud UI dashboard click on the **Visual Builder** service and select the hamburger menu.
 
   ![](images/100/dashboardVBCS.png)
 
-- The Service Details page gives you a quick glance of the service status overview.
+- In the dropdown menu select **Open Service Console**.
 
-- Click **Open Service Console** for the Oracle Visual Builder Cloud Service. The Service Console will then list all Visual Applications.
+![](images/LabGuide100-03e55fdd.png)
 
-  ![](images/100/openServiceConsole.png)
+
+### **STEP 3**: Create a New Instance
+
+- Click the **Create Instance** button on the next screen.
+
+![](images/LabGuide100-04595bab.png)
+
+- <More Steps Needed but Lab 50 required>
 
 ### **STEP 3**: Create Visual Application
 
