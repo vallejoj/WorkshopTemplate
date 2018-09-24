@@ -109,14 +109,17 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 - On Details screen enter the following data and click on **Next**.
 
-  In the Create Application dialog box, enter the following.
+  In the Create Application dialog box, enter the following, then press **Create**.
 
-  - Application name: Application
-  - Description: Tutorial application
-
-  - The Application ID text field is automatically populated as you type based on the Application Name.
+  - **Application Name:** ```Application```
+  - **Description:** ```Tutorial Application```
+  - **Application ID:** The text field is automatically populated as you type based on the Application Name.
 
     ![](images/100/nameApp.png)
+
+- **NOTE:** _If you receive a browser warning please update/change your browser to a compatible version._
+
+![](images/LabGuide100-01eb5aff.png)
 
 - You now have a new application, in which you can begin building pages and adding data.
 
@@ -128,45 +131,53 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 #### Create Business Objects by Importing the Inventory Data
 
-In this step you are assuming the identity of the Javascript, **_Lisa Jones_**.
+In this step we will create a new business object to host data for our application.
 
-![](images/lisa.png)
+- Open the **Business Objects** by clicking on the "Business Objects" icon in the navigation panel.
 
-- First we will import some data for our application to display. Click on the **Business Objects** icon in the left panel to open the "Business Objects" panel and click the "menu" icon next to the plus sign and click "Data Manager" to open the import tool.
+![](images/LabGuide100-d6259b9c.png)
 
-  ![](images/100/busObj.png)
+- Click the "menu" icon and select "Data Manager" from the dropdown to open the import tool.
 
-* Now we'll import the Inventory data from a file. Click on the **Data Manager** entry in the **Business Object** menu.
+![](images/100/openDataManager.png)
 
-  ![](images/100/openDataManager.png)
-
-- Click **Import Business Objects** and use the provided "Inventory.xlsx" file to import the data.
+- Now we'll import the Inventory data from a file. In the right hand pane select the **Import Business Objects** window.
 
   ![](images/100/importBusObj.png)
 
-- You will see a popup stating that the upload is taking place and it will confirm that the upload finished with a message stating "Upload succeeded." Click **Next**.
+- Download this spreadsheet <a href="/avbcsMisc/inventory.xlsx" target="new">inventory.xlsx</a> to your local machine. When prompted upload this file to create a new business object.
+
+![](images/LabGuide100-97eff54f.png)
+
+- You will see a popup stating that the upload is taking place and it will confirm that the upload finished with a message stating "Upload succeeded."
 
   ![](images/100/importingData.png)
 
-- The business objects will be displayed with the option to edit the names, we will be leaving the names as they are and click n**Next**.
+- Click **Next**
 
-  ![](images/100/newBusObj.png)
+![](images/LabGuide100-d8475aae.png)
+
+- The business objects will be displayed with the option to edit the names, we will be leaving the names as they are and click **Next**.
+
+  ![](images/LabGuide100-3b43dfc5.png)
 
 - The next step will display the fields that will be created and will detect the data types and set them accordingly. You can edit the names and types here but we will be leaving them as they are imported. Click **Finish**.
 
   ![](images/100/fields.png)
 
-- Once the import is finished, you will receive a message showing the business objects that have been imported.
+- Once the import is finished, you will receive a message showing the business objects that have been imported. Click the **Close** button.
 
-  ![](images/100/changesApplied.png)
+  ![](images/LabGuide100-b4cecb9c.png)
 
-- You should now see the **inventory** and **variant** business objects in the panel on the left.
+- You should now see the **inventory** and **variant** business objects in the panel on the left. Click on the **inventory** Business Object.
 
-  ![](images/100/busObjects.png)
+  ![](images/LabGuide100-5a924aed.png)
 
-- After selecting either business object, you can go to the **Data** tab to verify or edit the data imported.
+- You will see the details of the business object in the right hand panel.
 
-### **STEP 2 Creating the Web App**:
+![](images/LabGuide100-380ff7a6.png)
+
+### **STEP 2:** Creating the Web App
 
 Now that we have data for our app to display we can build our web app to display and modify that data.
 
@@ -178,43 +189,54 @@ Now that we have data for our app to display we can build our web app to display
 
   ![](images/100/nameWebApp.png)
 
-- Your applications canvas will open. This is where we will begin adding components to the page. You can expand the drop downs in the left panel to see where this page is in the structure of the app.
+- Your applications canvas will open. This is where we will begin adding components to the page. You can expand the drop downs in the left panel to see where the main-start page is in the structure of the app.
 
   ![](images/100/appStructure.png)
 
-- To begin, we'll add a list to our page to display our added inventory data. scroll down in the components list panel and drag a **List View** onto our page.
+- To begin, we'll add a list to our page to display our added inventory data. Scroll down in the components list panel and drag a **List View** onto our page.
 
   ![](images/100/addList.png)
 
-- To associate our inventory data with the list, in the right panel select **Add Data**. (If you DO NOT see **Add Data** you may need to expand the right panel or click on the **Quick Add** icon in the "List View" panel, highlighted below)
+- To associate our inventory data with the list, in the right panel select **Add Data**.
 
-  ![](images/100/addPage.png)
+  ![](images/LabGuide100-6c8df0e9.png)
 
-- There are several steps for selecting data for our list:
+(If you DO NOT see **Add Data** you may need to expand the right panel or click on the **Quick Add** icon in the "List View" panel, highlighted below)
 
-  - For **Select Endpoint** expand **Business Objects** > **Inventory** and select the **GET /Inventory** entry, then click **Next**.
+![](images/100/addPage.png)
 
-  ![](images/100/inventoryEndpoint.png)
+- There are several steps for selecting data for our list. To select the endpoint expand Business Objects > Inventory and select the GET /Inventory entry, then click Next.
+
+![](images/LabGuide100-95393e95.png)
 
   - For **Choose Template** we will use the default template which is at the top of the list and then click **Next**.
 
-  ![](images/100/defaultTemplate.png)
+  ![](images/LabGuide100-faabe0ef.png)
 
-  - For our **Fields** we will select data from the **Endpoint Structure** and drag them into the **Fields** boxes. Drag the following items into the listed Field and then click **Next**:
+  - For our **Fields** we will select data from the **Endpoint Structure** and drag them into the **Fields** boxes.
+
     - "title1": name
     - "title2": variant
     - "value1": quantity
     - "value2": reserved
 
-  ![](images/100/dataFields.png)
+
+  ![](images/100/drag_drop_fields.png)
+
+  Your screen should look like the following before you click **NEXT**:
+
+  ![](images/100/final_fields.png)
 
 - We don't need to define a query for our data, so we can click **Finish**.
+
+  ![](images/100/finish.png)
 
 - At this point we have an application that will display our data and we can look at the the live app by clicking on the **Play** button in the top right corner.
 
   ![](images/100/liveView.png)
 
-  - We have created a simple app to display our wine inventory...
+- We have created a simple app to display our wine inventory...
+
 
   ![](images/100/firstLiveView.png)
 
