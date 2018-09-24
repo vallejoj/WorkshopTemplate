@@ -50,6 +50,42 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 ![](images/100/LabGuide100-80c36c4c.png)
 
 
+### **STEP 2**: Create a New Instance
+
+- At the top of the page select the **Guided Journey** link.
+
+![](images/LabGuide100-f0dbfc52.png)
+
+- Next Select the **Develop and Deploy** option.
+
+![](images/LabGuide100-cb88530c.png)
+
+- Fill out the form below selecting **Javascript** and **Web App**. Then press the **Create Visual Builder Instance** button.
+
+![](images/LabGuide100-6fa626cd.png)
+
+- Name your instance and press create.
+
+![](images/LabGuide100-a793d2af.png)
+
+- Download your public/private keys when prompted by clicking the **Download** link on the prompt.
+
+![](images/LabGuide100-f7898cb7.png)
+
+- You should see your instance being created.
+
+![](images/LabGuide100-a7f94ffa.png)
+
+- The page will show you the status of the stack creation.
+
+![](images/LabGuide100-8263080b.png)
+
+![](images/LabGuide100-9f6f488d.png)
+
+- When you see the following screen you can proceed to the next step.
+
+
+
 ### **STEP 2**: Access the Oracle Autonomous Visual Builder Cloud Service
 
 - From the Cloud UI dashboard click on the **Visual Builder** service and select the hamburger menu.
@@ -61,13 +97,6 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 ![](images/LabGuide100-03e55fdd.png)
 
 
-### **STEP 3**: Create a New Instance
-
-- Click the **Create Instance** button on the next screen.
-
-![](images/LabGuide100-04595bab.png)
-
-- <More Steps Needed but Lab 50 required>
 
 ### **STEP 3**: Create Visual Application
 
