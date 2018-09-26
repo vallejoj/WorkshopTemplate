@@ -2,13 +2,9 @@
 
 # Lab 200 - Adding Update and Edit Pages to the Web Application
 
-Updated: July 16, 2018
-
 ## Introduction
 
-This is the second of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This lab will walk you through adding pages to your application for adding data and editing data.
-
-**_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
+ This lab will walk you through adding pages to your application, adding data and editing data inside the Visual Builder Cloud Service.
 
 ## Objectives
 
@@ -18,9 +14,7 @@ This is the second of several labs that are part of the **Oracle Autonomous Visu
 
 ## Required Artifacts
 
-- The following lab requires an Oracle Public Cloud account that will be supplied by your instructor.
-
-- This lab assumes that you have completed the previous lab in this series.
+- This lab assumes that you have completed the [lab 100](/LabGuide100.md).
 
 # Add Create and Edit Pages
 
