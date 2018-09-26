@@ -10,7 +10,7 @@
 
 - Create Pages to Add and Edit Content
   - Create a page to allow users to add data
-  - Create a page to allow users to edit data
+  - Create a page to allow users to edit data 
 
 ## Required Artifacts
 
