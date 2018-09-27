@@ -54,47 +54,47 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 - At the top of the page select the **Guided Journey** link.
 
-![](images/LabGuide100-f0dbfc52.png)
+![](images/100/LabGuide100-f0dbfc52.png)
 
 - Next Select the **Develop and Deploy** option.
 
-![](images/LabGuide100-cb88530c.png)
+![](images/100/LabGuide100-cb88530c.png)
 
 - Fill out the form below selecting **Javascript** and **Web App**. Then press the **Create Visual Builder Instance** button.
 
-![](images/LabGuide100-6fa626cd.png)
+![](images/100/LabGuide100-6fa626cd.png)
 
 - Name your instance and press create.
 
-![](images/LabGuide100-a793d2af.png)
+![](images/100/LabGuide100-a793d2af.png)
 
 - Download your public/private keys when prompted by clicking the **Download** link on the prompt.
 
-![](images/LabGuide100-f7898cb7.png)
+![](images/100/LabGuide100-f7898cb7.png)
 
 - You should see your instance being created.
 
-![](images/LabGuide100-a7f94ffa.png)
+![](images/100/LabGuide100-a7f94ffa.png)
 
 - The page will show you the status of the stack creation.
 
-![](images/LabGuide100-8263080b.png)
+![](images/100/LabGuide100-8263080b.png)
 
-![](images/LabGuide100-9f6f488d.png)
+![](images/100/LabGuide100-9f6f488d.png)
 
 - When you see the following screen you can proceed to the next step.
 
-![](images/LabGuide100-086b8273.png)
+![](images/100/LabGuide100-086b8273.png)
 
 ### **STEP 3**: Access the Oracle Autonomous Visual Builder Cloud Service
 
 - Click on the **Hamburger** icon at the top of the page.
 
-![](images/LabGuide100-2df8d13a.png)
+![](images/100/LabGuide100-2df8d13a.png)
 
 - Select **Visual Builder** from the navigation menu.
 
-![](images/LabGuide100-a4e64280.png)
+![](images/100/LabGuide100-a4e64280.png)
 
 - On the next screen open the **Visual Builder Hompage**.
 
@@ -119,7 +119,7 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 - **NOTE:** _If you receive a browser warning please update/change your browser to a compatible version._
 
-![](images/LabGuide100-01eb5aff.png)
+![](images/100/LabGuide100-01eb5aff.png)
 
 - You now have a new application, in which you can begin building pages and adding data.
 
@@ -135,7 +135,7 @@ In this step we will create a new business object to host data for our applicati
 
 - Open the **Business Objects** by clicking on the "Business Objects" icon in the navigation panel.
 
-![](images/LabGuide100-d6259b9c.png)
+![](images/100/LabGuide100-d6259b9c.png)
 
 - Click the "menu" icon and select "Data Manager" from the dropdown to open the import tool.
 
@@ -147,7 +147,7 @@ In this step we will create a new business object to host data for our applicati
 
 - Download this spreadsheet <a href="/avbcsMisc/inventory.xlsx" target="new">inventory.xlsx</a> to your local machine. When prompted upload this file to create a new business object.
 
-![](images/LabGuide100-97eff54f.png)
+![](images/100/LabGuide100-97eff54f.png)
 
 - You will see a popup stating that the upload is taking place and it will confirm that the upload finished with a message stating "Upload succeeded."
 
@@ -155,11 +155,11 @@ In this step we will create a new business object to host data for our applicati
 
 - Click **Next**
 
-![](images/LabGuide100-d8475aae.png)
+![](images/100/LabGuide100-d8475aae.png)
 
 - The business objects will be displayed with the option to edit the names, we will be leaving the names as they are and click **Next**.
 
-  ![](images/LabGuide100-3b43dfc5.png)
+  ![](images/100/LabGuide100-3b43dfc5.png)
 
 - The next step will display the fields that will be created and will detect the data types and set them accordingly. You can edit the names and types here but we will be leaving them as they are imported. Click **Finish**.
 
@@ -167,15 +167,15 @@ In this step we will create a new business object to host data for our applicati
 
 - Once the import is finished, you will receive a message showing the business objects that have been imported. Click the **Close** button.
 
-  ![](images/LabGuide100-b4cecb9c.png)
+  ![](images/100/LabGuide100-b4cecb9c.png)
 
 - You should now see the **inventory** and **variant** business objects in the panel on the left. Click on the **inventory** Business Object.
 
-  ![](images/LabGuide100-5a924aed.png)
+  ![](images/100/LabGuide100-5a924aed.png)
 
 - You will see the details of the business object in the right hand panel.
 
-![](images/LabGuide100-380ff7a6.png)
+![](images/100/LabGuide100-380ff7a6.png)
 
 ### **STEP 2:** Creating the Web App
 
@@ -199,7 +199,7 @@ Now that we have data for our app to display we can build our web app to display
 
 - To associate our inventory data with the list, in the right panel select **Add Data**.
 
-  ![](images/LabGuide100-6c8df0e9.png)
+  ![](images/100/LabGuide100-6c8df0e9.png)
 
 (If you DO NOT see **Add Data** you may need to expand the right panel or click on the **Quick Add** icon in the "List View" panel, highlighted below)
 
@@ -207,11 +207,11 @@ Now that we have data for our app to display we can build our web app to display
 
 - There are several steps for selecting data for our list. To select the endpoint expand Business Objects > Inventory and select the GET /Inventory entry, then click Next.
 
-![](images/LabGuide100-95393e95.png)
+![](images/100/LabGuide100-95393e95.png)
 
   - For **Choose Template** we will use the default template which is at the top of the list and then click **Next**.
 
-  ![](images/LabGuide100-faabe0ef.png)
+  ![](images/100/LabGuide100-faabe0ef.png)
 
   - For our **Fields** we will select data from the **Endpoint Structure** and drag them into the **Fields** boxes.
 
@@ -248,7 +248,7 @@ Our app is displaying our data but our inventory/reserved counts aren't labeled.
 
 - In the detail panel on the right side, select the **General** tab.
 
-![](images/LabGuide100-b930c1a3.png)
+![](images/100/LabGuide100-b930c1a3.png)
 
 - We can add our label to the data in the fields. We add the label as a quoted string inside the double square brackets. So the data in the "Value1" field will contain the following
 
@@ -257,8 +257,8 @@ Our app is displaying our data but our inventory/reserved counts aren't labeled.
   and the "Value2" field will have:
 
   `[["Reserved: " + $current.data.reserved]]`
-  
-  ![](images/LabGuide100-6a2979a3.png)
+
+  ![](images/100/LabGuide100-6a2979a3.png)
 
 
 
