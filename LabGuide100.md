@@ -45,7 +45,7 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 ![](images/100/show_dash_vb.png)
 
-- Your should see the following before proceeding to the next step.
+- You should see the following before proceeding to the next step.
 
 ![](images/100/LabGuide100-80c36c4c.png)
 
@@ -60,7 +60,7 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 ![](images/100/LabGuide100-cb88530c.png)
 
-- Fill out the form below selecting **Javascript** and **Web App**. Then press the **Create Visual Builder Instance** button.
+- Fill out the form below selecting **Javascript** and **Web App**. Then press the **Create Autonomous Visual Builder Instance** button.
 
 ![](images/100/LabGuide100-6fa626cd.png)
 
@@ -68,7 +68,11 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 ![](images/100/LabGuide100-a793d2af.png)
 
-- Download your public/private keys when prompted by clicking the **Download** link on the prompt.
+- You will see the following screen once your request is submitted. Press the refresh button every few minutes to see if your instance is provisioned.
+
+![](images/100/LabGuide100-fcc49616.png)
+
+-Q/A Paused here
 
 ![](images/100/LabGuide100-f7898cb7.png)
 
