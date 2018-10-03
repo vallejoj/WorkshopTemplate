@@ -9,16 +9,20 @@
       {
         "number": "0",
         "filename": "ReadMe.md",
-        "title": "README",
-        "description": "Workshop Overview"
+        "title": "Getting a Cloud Trial",
+        "description": "Get a free Cloud Account to perform this lab."
+      },
+      {
+        "number": "50",
+        "filename": "Labguide50.md",
+        "title": "Lab 50: Provisioning AVBCS",
+        "description": "Learn how to provision the Autonomous Visual Builder Cloud Service."
       },
       {
         "number": "100",
         "filename": "LabGuide100.md",
-        "title":
-          "Lab 100: Creating a Visual Builder Application and Displaying Business Data",
-        "description":
-          "In this first lab you will create a Visual Builder application and add business data to display. "
+        "title": "Lab 100: Creating a Visual Builder Application",
+        "description": "In this first lab you will create a Visual Builder application and add business data to display. "
       },
       {
         "number": "200",
