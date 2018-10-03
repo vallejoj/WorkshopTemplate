@@ -72,17 +72,12 @@ This is the first of several labs that are part of the **Oracle Autonomous Visua
 
 ![](images/100/LabGuide100-fcc49616.png)
 
--Q/A Paused here
-
-![](images/100/LabGuide100-f7898cb7.png)
-
 - You should see your instance being created.
 
-![](images/100/LabGuide100-a7f94ffa.png)
+![](images/100/LabGuide100-8ef678e1.png)
 
-- The page will show you the status of the stack creation.
+- If you expand the **Instance Create and Delete History** you can watch the progress of the account creation.
 
-![](images/100/LabGuide100-8263080b.png)
 
 ![](images/100/LabGuide100-9f6f488d.png)
 
