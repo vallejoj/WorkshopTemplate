@@ -26,16 +26,16 @@ During this lab we will take your new trial account and show you how to provisio
 
 - Enter your User Name and Password provided for your trial account and click **Sign In**
 
-    ![](images/100/idcs_login.png)
+![](images/100/idcs_login.png)
 
 
 - You will be presented with a Dashboard displaying the various cloud services available to this account.
 
-  ![](images/100/cloud_dash.png)
+![](images/100/cloud_dash.png)
 
 - If the Visual Builder Cloud Service does not appear in your list click the customize dashboard button.
 
-  ![](images/100/custom_dash.png)
+![](images/100/custom_dash.png)
 
 - Then select Visual Builder and click the show button.
 

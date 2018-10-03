@@ -14,13 +14,13 @@
 
 ## Required Artifacts
 
-- This lab assumes that you have completed the [lab 100](/LabGuide100.md).
+- This lab assumes that you have completed the [Lab 100](/LabGuide100.md).
 
-## Add Create and Edit Pages
+## Creating and Editing Pages
 
 Now that we have a display of our data, the next step is to allow additions and edits to that data. This will allow users to add new wines as they become available and edit the inventory/reserved counts.
 
-### Add Create Page
+### Create a New Page
 
 - In the **Designer View** of our app, click inside the list component but outside an individual item so that the List is selected and the **List View** tag is displayed in blue.
 
@@ -47,7 +47,7 @@ Now that we have a display of our data, the next step is to allow additions and 
 
 ![](images/LabGuide200-1be1d6be.png)
 
-- You will be presented with the main page of the app again. In order to view the new page  select the monitor icon,, and expand **InventoryWebApp --> flows --> main** dropdown then select **CreateInventory**.
+- You will be presented with the main page of the app again. In order to view the new page  select the monitor icon, and expand **InventoryWebApp --> flows --> main** dropdown then select **CreateInventory**.
 
 ![](images/LabGuide200-743dc668.png)
 
@@ -62,13 +62,17 @@ Now that we have a display of our data, the next step is to allow additions and 
 - Once in live mode, enter a new wine and click **Save**. You can enter your favorite wine or use the following example:
 
   - **name:** ```  Ice  ```
-  - **variant:** ```  white  ```
   - **quantity:** ```  50  ```
   - **reserved:** ```  0  ```
+  - **variant:** ```  white  ```
 
 ![](images/LabGuide200-dc8bd8fe.png)
 
-(The save may take a few seconds, you'll know it's finished when you see the following screen.)
+The save may take a few seconds, you'll will first see the image below.
+
+![](images/LabGuide200-92be9188.png)
+
+Once the save is complete the following image will appear.
 
 ![](images/LabGuide200-b055e910.png)
 
@@ -76,26 +80,35 @@ Now that we have a display of our data, the next step is to allow additions and 
 
 ![](images/LabGuide200-8a1542ea.png)
 
-- Exit Live mode by selecting the Design button.
+- Then press the **Run** button.
 
-![](images/LabGuide200-42ac6cc4.png)
+![](images/LabGuide200-c22e5c87.png)
 
-
-- Back in the **main-start** page you'll see our new entry is added to the list, and also note that there is a new **Create** button which was added for us by using the **Quick Start** guide. Buttons are automatically created to link pages inside the quick start guide.
+- In the new browser tab you'll see our added data is in the list, and also note that there is a new **Create** button which was added for us by using the **Quick Start** guide. Buttons are automatically created to link pages inside the quick start guide.
 
 ![](images/LabGuide200-b7a2d3dc.png)
+
+- Close your new tab to and exit Live mode by selecting the **Design** button.
+
+![](images/LabGuide200-42ac6cc4.png)
 
 ### Add Edit Page
 
 - Now lets use the **Quick Start** guide to add an **Edit** page and a **Delete** button to our app's main page. Once again, click on the **List** component outside of a specific item so that the **List View** tag appears.
 
-  ![](images/200/listSelected.png)
+![](images/200/listSelected.png)
 
-- Now the **List View** detail panel should be displayed on the right. Click on the **Quick Start** icon and we'll see the links to add pages. This time we'll add an **Edit** page. This will allow users to edit the inventory and reserve counts of the items. Click on **Add Edit Page** in the right panel.
+- Now the **List View** detail panel should be displayed on the right. Click on the **Quick Start** icon and we'll see the links to add pages. Then click on **Add Edit Page** in the right panel.
 
-  - ![](images/200/addEditPage.png)
+![](images/200/addEditPage.png)
 
-- On the **Select Read Endpoint** page we'll leave the default endpoint selected (GET /Inventory/{Inventory_Id}), and click **Next**. On the next step we'll leave the **Select Update Endpoint** set as the default (PATCH /Inventory/{Inventory_Id}) and click **Next**.
+- On the **Select Read Endpoint** page we'll leave the default endpoint selected (GET /Inventory/{Inventory_Id}), and click **Next**.
+
+![](images/LabGuide200-7465d138.png)
+
+- On the next step we'll leave the **Select Update Endpoint** set as the default (PATCH /Inventory/{Inventory_Id}) and click **Next**.
+
+![](images/LabGuide200-2649ed80.png)
 
 - In the **Page Details** step we'll select the fields we want displayed on our edit page, and then click **Finish**. Here we'll select:
 
@@ -104,9 +117,23 @@ Now that we have a display of our data, the next step is to allow additions and 
   - Quantity
   - Reserved
 
-  ![](images/200/editFields.png)
+![](images/LabGuide200-d0d96085.png)
 
-- Now if we go back to our "Main-start" page and again enter **Live** mode by clicking the "Live" button above the right panel we can test our edit page. Click on a list entry and the the **Edit Inventory** button will become active. Click on the **Edit Inventory** button to go to our new edit page we just created.
+- Once the creation process completes click on the **main-start** page tab.
+
+![](images/LabGuide200-0fc6d691.png)
+
+ - The open the **Live** mode by clicking the "Live" button above the right panel we can test our edit page.
+
+ ![](images/LabGuide200-cd415c35.png)
+
+- In the left hand panel expand the flows andmain menu options. Then open the **main-edit-inventory** page.
+
+![](images/LabGuide200-eef9b197.png)
+
+**Chip Stopped q/a here
+
+- Then Click on the **Edit Inventory** button to go to our new edit page we just created.
 
   ![](images/200/editLive.png)
 
