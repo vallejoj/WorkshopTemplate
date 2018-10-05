@@ -29,17 +29,17 @@ This is the third of several labs that are part of the **Oracle Autonomous Visua
 
 - You will be presented with the New Mobile Application window. In this window, name the mobile application ```InventoryMobileApp``` and choose the  bottom bar navigation style, then click **Finish**.
 
-![](images/LabGuide300-93c6a76c.png)
+![](images/300/LabGuide300-93c6a76c.png)
 
 - You will see the new app created with the name **item1-start**. To keep the page clean close all your web application pages.
 
-![](images/LabGuide300-793ca291.png)
+![](images/300/LabGuide300-793ca291.png)
 
 ### **STEP 2**: Add Mobile App Pages
 
 - At this point you should be seeing a view of your mobile application in the development console. We'll now begin adding pages to display an inventory overview and item details.
 
-![](images/LabGuide300-6860aa88.png)
+![](images/300/LabGuide300-6860aa88.png)
 
 The steps to add pages will be familiar if you have completed the web application creation lab in this series. The main page for our application is created for us automatically, so we will begin by adding components to display our data.
 
@@ -49,11 +49,11 @@ The steps to add pages will be familiar if you have completed the web applicatio
 
 - You should see the default list view component on your app. Next we'll customize the data displayed.
 
-  ![](images/300/mobileListDefault.png)
+![](images/300/mobileListDefault.png)
 
 - To associate our inventory data with the list, in the right panel select **Add Data**.
 
-  ![](images/100/LabGuide100-6c8df0e9.png)
+![](images/100/LabGuide100-6c8df0e9.png)
 
 - Expand **Business Objects --> Inventory** menu and select the **GET /Inventory** entry, once it is highlighted blue click **Next**.
 
@@ -108,10 +108,10 @@ Our app is displaying our data but our inventory/reserved counts aren't labeled.
 
 - Now our app displays a list of the available wines with their labeled inventory count and reserved count.
 
-  ![](images/300/countsLabeled.png)
+![](images/300/countsLabeled.png)
 
   # Summary
 
   We have now created a mobile application in Autonomous Visual Builder Cloud Service, added our business data. The next lab in the series will guide us through adding update and edit features to allow the app's users to update inventory counts from the app.
 
-  - You may proceed to [Lab 400](LabGuide400.md)
+- You may proceed to [Lab 400](LabGuide400.md)
