@@ -28,11 +28,11 @@ Now that we have a display of our data, the next step is to allow additions and 
 
 - In the right hand menu select the **Quick Start** icon. Then click **Add Create Page**.
 
-![](images/LabGuide200-252f126c.png)
+![](images/200/LabGuide200-252f126c.png)
 
 - This will bring up a two step wizard. For the first step, we will click on the **POST /Inventory** and click **Next**.
 
-![](images/LabGuide200-d85827f1.png)
+![](images/200/LabGuide200-d85827f1.png)
 
 - This will bring us to the **Page Detail** step where we can select the fields we would like to make available for creating new records. We'll select the following:
 
@@ -41,19 +41,19 @@ Now that we have a display of our data, the next step is to allow additions and 
   - reserved
   - variant
 
-![](images/LabGuide200-e9c3b310.png)
+![](images/200/LabGuide200-e9c3b310.png)
 
 - Also adjust the **Button Label** to simply "Create" and click **Finish**.
 
-![](images/LabGuide200-1be1d6be.png)
+![](images/200/LabGuide200-1be1d6be.png)
 
 - You will be presented with the main page of the app again. In order to view the new page  select the monitor icon, and expand **InventoryWebApp --> flows --> main** dropdown then select **CreateInventory**.
 
-![](images/LabGuide200-743dc668.png)
+![](images/200/LabGuide200-743dc668.png)
 
 - You should see a view of your new form appear.
 
-![](images/LabGuide200-df2591bd.png)
+![](images/200/LabGuide200-df2591bd.png)
 
 - With this page created we can toggle to live mode right to interact with the app and add new data. To enable live mode, click the **Live** button above the right side panel.
 
@@ -66,31 +66,31 @@ Now that we have a display of our data, the next step is to allow additions and 
   - **reserved:** ```  0  ```
   - **variant:** ```  white  ```
 
-![](images/LabGuide200-dc8bd8fe.png)
+![](images/200/LabGuide200-dc8bd8fe.png)
 
 The save may take a few seconds, you'll will first see the image below.
 
-![](images/LabGuide200-92be9188.png)
+![](images/200/LabGuide200-92be9188.png)
 
 Once the save is complete the following image will appear.
 
-![](images/LabGuide200-b055e910.png)
+![](images/200/LabGuide200-b055e910.png)
 
 - To view our new entry click on the tab for your main page.
 
-![](images/LabGuide200-8a1542ea.png)
+![](images/200/LabGuide200-8a1542ea.png)
 
 - Then press the **Run** button.
 
-![](images/LabGuide200-c22e5c87.png)
+![](images/200/LabGuide200-c22e5c87.png)
 
 - In the new browser tab you'll see our added data is in the list, and also note that there is a new **Create** button which was added for us by using the **Quick Start** guide. Buttons are automatically created to link pages inside the quick start guide.
 
-![](images/LabGuide200-b7a2d3dc.png)
+![](images/200/LabGuide200-b7a2d3dc.png)
 
 - Close your new tab to and exit Live mode by selecting the **Design** button.
 
-![](images/LabGuide200-42ac6cc4.png)
+![](images/200/LabGuide200-42ac6cc4.png)
 
 ### Add Edit Page
 
@@ -104,11 +104,11 @@ Once the save is complete the following image will appear.
 
 - On the **Select Read Endpoint** page we'll leave the default endpoint selected (GET /Inventory/{Inventory_Id}), and click **Next**.
 
-![](images/LabGuide200-7465d138.png)
+![](images/200/LabGuide200-7465d138.png)
 
 - On the next step we'll leave the **Select Update Endpoint** set as the default (PATCH /Inventory/{Inventory_Id}) and click **Next**.
 
-![](images/LabGuide200-2649ed80.png)
+![](images/200/LabGuide200-2649ed80.png)
 
 - In the **Page Details** step we'll select the fields we want displayed on our edit page, and then click **Finish**. Here we'll select:
 
@@ -117,31 +117,31 @@ Once the save is complete the following image will appear.
   - Quantity
   - Reserved
 
-![](images/LabGuide200-d0d96085.png)
+![](images/200/LabGuide200-d0d96085.png)
 
 - Once the creation process completes click on the **main-start** page tab.
 
-![](images/LabGuide200-0fc6d691.png)
+![](images/200/LabGuide200-0fc6d691.png)
 
  - The open the **Live** mode by clicking the "Live" button above the right panel we can test our edit page.
 
-![](images/LabGuide200-cd415c35.png)
+![](images/200/LabGuide200-cd415c35.png)
 
 - Select the row from the table you created earlier and press the **Edit Inventory** button.
 
-![](images/LabGuide200-40720a3a.png)
+![](images/200/LabGuide200-40720a3a.png)
 
 - Change the quantity of your entry to 45 and press **Save**.
 
-![](images/LabGuide200-fa6c982b.png)
+![](images/200/LabGuide200-fa6c982b.png)
 
 - You will see the inventory level adjust on your main-start page.
 
-![](images/LabGuide200-fd9a06a2.png)
+![](images/200/LabGuide200-fd9a06a2.png)
 
 _Note: If the value does not immediate update press the reload button at the top of the page._
 
-![](images/LabGuide200-a6016421.png)
+![](images/200/LabGuide200-a6016421.png)
 
 - If we go back to our **main** tab we can now see our apps structure:
 
@@ -151,4 +151,4 @@ _Note: If the value does not immediate update press the reload button at the top
 
 We have now created an application in Autonomous Visual Builder Cloud Service, added our business data, and added pages to display, add to, and edit our data all with very little need for code.
 
-You may proceed to [Lab 300](LabGuide300.md) 
+You may proceed to [Lab 300](LabGuide300.md)
