@@ -100,15 +100,15 @@ Next we'll add a page to display inventory item details and once that is complet
 
 ### Add REST Service Connection
 
-- We will now add the Service Connection through which data will be retrieved from an external REST endpoint. If you are not already, log in to the Visual Builder Cloud Service(instructions on how to do so are in Lab 100).
+We will now add the Service Connection through which data will be retrieved from an external REST endpoint.
 
-- In your application development console, click on **Service Connections** icon in the far left panel. It is the icon that looks like a circle with a line through it and is highlighted blue in the image below.
+- In your application development console, click on **Service Connections** icon in the far left panel.
 
-  ![](images/400/iconServiceConnections.png)
+![](images/LabGuide400-ce468472.png)
 
-- Click the button **"+ Service Connection"** to create a new service connection instance.
+- Add a service connection by press the **"+ Service Connection"** button.
 
-  ![](images/400/addServiceConnection.png)
+![](images/400/addServiceConnection.png)
 
 - In the **Create Service Connection** window, we will choose **Define by Endpoint** as our source.
 
