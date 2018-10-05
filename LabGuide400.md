@@ -249,21 +249,36 @@ The action chain is now ready to do it's work. All we need to do is tell our app
 
 ![](images/LabGuide400-907131f8.png)
 
- - Then drag a button from the components column onto the page between the image and the list components. In the button's configuration panel on the right side change the **Text** from "button" to "More Info" and choose the "Full" chroming option to make our button stand out a little more. Next click the **Events** tab. Once on the **Events** page, click the **+ Event Listener** button to begin linking our action chain to an event.
+ - Then drag a button from the components column onto the page between the image and the list components.
+
+![](images/LabGuide400-9408ade1.png)
+
+ - In the button's configuration panel on the right side change the Text from button to ```More Info``` and choose the **Full** chroming option to make our button stand out a little more.
 
   ![](images/400/buttonText.png)
 
-- VBCS allows us to quickly add events to our buttons. In the **Events** tab click **+ New Event** and choose "Quick Start: 'click' ". This will add a click event to the button.
+- Next click the **Events** tab. Once on the Events page, click the **+ Event Listener** button to begin linking our action chain to an event.
 
-  ![](images/400/addEventToButton.png)
+![](images/LabGuide400-93c7b627.png)
 
-- Drag the **Call Action Chain** from the action collection panel on the left to the bottom of the chain and then click the **Select Action Chain** button in the right panel.
+- VBCS allows us to quickly add events to our buttons. Choose **Quick Start: 'click'** to click event to the button.
 
-  ![](images/400/buttonChain.png)
+![](images/400/addEventToButton.png)
 
-- Next select our action chain "retrieveItemDescription" and click **Select**.
 
-  ![](images/400/selectActionChain.png)
+- Drag the **Call Action Chain** from the action collection panel on the left to the bottom of the chain.
+
+![](images/400/buttonChain.png)
+
+- Then click the **Select Action Chain** button in the right panel.
+
+![](images/LabGuide400-e19a96cf.png)
+
+- Next select our action chain ```retrieveItemDescription``` and click **Select**.
+
+**q/a stopped**
+
+![](images/400/selectActionChain.png)
 
 - Our pieces are all tied together, when the button is clicked on the inventory detail page it will trigger our action chain that in turn calls our service connection and stores the response of that call in our variable. All that's left to do now is display the data stored in the variable in our app.
 
