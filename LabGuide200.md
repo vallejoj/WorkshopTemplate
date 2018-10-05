@@ -125,19 +125,23 @@ Once the save is complete the following image will appear.
 
  - The open the **Live** mode by clicking the "Live" button above the right panel we can test our edit page.
 
- ![](images/LabGuide200-cd415c35.png)
+![](images/LabGuide200-cd415c35.png)
 
-- In the left hand panel expand the flows andmain menu options. Then open the **main-edit-inventory** page.
+- Select the row from the table you created earlier and press the **Edit Inventory** button.
 
-![](images/LabGuide200-eef9b197.png)
+![](images/LabGuide200-40720a3a.png)
 
-**Chip Stopped q/a here
+- Change the quantity of your entry to 45 and press **Save**.
 
-- Then Click on the **Edit Inventory** button to go to our new edit page we just created.
+![](images/LabGuide200-fa6c982b.png)
 
-  ![](images/200/editLive.png)
+- You will see the inventory level adjust on your main-start page.
 
-- This section of the web app will allow users to update items with new counts as they become available. If you would like to test the edit functionality, change a count and press save, otherwise just press cancel to return to the **main-start** page. Remember to exit **Live** mode by clicking the "Live" button in the top right.
+![](images/LabGuide200-fd9a06a2.png)
+
+_Note: If the value does not immediate update press the reload button at the top of the page._
+
+![](images/LabGuide200-a6016421.png)
 
 - If we go back to our **main** tab we can now see our apps structure:
 
@@ -146,3 +150,5 @@ Once the save is complete the following image will appear.
 # Summary
 
 We have now created an application in Autonomous Visual Builder Cloud Service, added our business data, and added pages to display, add to, and edit our data all with very little need for code.
+
+You may proceed to [Lab 300](LabGuide300.md) 
