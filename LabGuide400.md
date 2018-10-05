@@ -2,25 +2,19 @@
 
 # Lab 400 - Incorporating REST Data into the Application
 
-Updated: July 16, 2018
-
 ## Introduction
 
-This is the fourth of several labs that are part of the **Oracle Autonomous Visual Builder Cloud Service workshop.** This lab will walk you through creating a mobile application page for viewing an inventory item's details and also incorporating REST service data into the mobile application. We will be using the mobile application here to display the REST but if you would like to use a AVBCS web application the steps are similar.
-
-**_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
+This lab will walk you through creating a mobile application page for viewing an inventory item's details and also incorporating REST service data into the mobile application.
 
 ## Objectives
 
 - Create a mobile page for viewing inventory item details
-- Add a REST Service Connection to the application
-- Incorporate data retrieved from Service Connection into application
+- Add a REST service connection to the application
+- Incorporate data retrieved from service connection into application
 
 ## Required Artifacts
 
-- The following lab requires an Oracle Public Cloud account that will be supplied by your instructor.
-
-- This lab assumes that you have completed the previous labs in this series and created the items covered in those labs. If you have not, download the `DemoWSApp_MobileLabImport_2.zip` file and after creating an application in VBCS(instructions found in lab 100), import the zip file provided to set up the items created in the previous labs.
+- This lab assumes that you have completed [Lab 100](LabGuide100.md), [Lab 200](LabGuide200.md), [Lab 300](LabGuide300.md).
 
 # Create Mobile Pages for Inventory Details
 
@@ -28,34 +22,53 @@ Next we'll add a page to display inventory item details and once that is complet
 
 ### Add a Inventory Details Mobile Page
 
-- To begin adding the **Details**, open the **main-start** page where we have a list of the inventory items. Open the **Page Structure** panel by clicking the icon that resembles a diagram above the component list. This will make it easy to see all the components and select the **List View** component which we will work with next.
+- Open the item1-start page by expanding the **inventorymobileapp --> flows --> item1** menu and click the **item1-start**.
 
-* After selecting the **List View** component from the **Page Structure** list you can close the **Page Structure** panel again by clicking on the icon again to regain screen space.
+![](images/LabGuide400-06c90509.png)
 
-  ![](images/400/pageStructureIcon.png)
 
-- With the **List View** component selected, open the **Quick Start** tab in the right panel and select **Add Detail Page**.
+ - Navigate and open the **Page Structure** panel. This will make it easy to see all the components and select the List View component which we will work with next.
 
-  ![](images/400/addDetailPage.png)
+![](images/400/pageStructureIcon.png)
+
+- Select the **List View** component from the **Page Structure**.
+
+![](images/LabGuide400-192fb5c5.png)
+
+- With the List View component selected, open the **Quick Start** tab in the right panel and select **Add Detail Page**.
+
+![](images/400/addDetailPage.png)
 
 - Select the GET endpoint of the Inventory Business Object and click **Next**.
 
-  ![](images/400/getInventoryEndpoint.png)
+![](images/200/LabGuide200-d85827f1.png)
 
-- On the **Page Details** step, select the following items in the order listed and then click **Finish**.
+- This will bring us to the **Page Detail** step where we can select the fields we would like to make available for creating new records. We'll select the following:
 
-  - Name
-  - Variant
-  - Inventory
-  - Reserved
+  - name
+  - quantity
+  - reserved
+  - variant
 
-    ![](images/100/detailFields.png)
+![](images/200/LabGuide200-e9c3b310.png)
 
-- We can now test the inventory item details page to see our newly created page. Click on the "Live" button in the top right corner of the development console to enable live mode and then click an item in the inventory list.
+- Then press finish.
 
-  ![](images/100/liveButton.png)
+![](images/200/LabGuide200-1be1d6be.png)
 
-- This will open our new **Inventory Detail** page and display the information from the item we have selected. You'll see that the page is already created for us including a back button that will navigate back to the overall inventory list. Exit "Live" mode by clicking the "Live" button again.
+- We can now test the inventory item details page to see our newly created page. Click on the **Live** button to enable live mode.
+
+![](images/200/liveButton.png)
+
+- Select a row from the list view on the mobile phone.
+***
+![](images/LabGuide400-41aafa64.png)
+
+- This will open our new **Inventory Detail** page and display the information from the item we have selected. You'll see that the page is already created for us including a back button that will navigate back to the overall inventory list.
+
+![](images/LabGuide400-1751443a.png)
+
+- Exit "Live" mode by clicking the "Live" button again.
 
 - Now we'll add an image to our detail page. From the component list in the left panel, drag an "Image" component onto the Inventory Detail page so that it is placed between the title bar and our "List" component. You should now have a layout with a blank image on it.
 
