@@ -114,21 +114,23 @@ We will now add the Service Connection through which data will be retrieved from
 
   ![](images/400/connectionSource.png)
 
-- "GET" is the **Method** selected in dropdown menu. Next, enter the following address in the URL field:
+- Select **GET** as the Method selected in dropdown menu. Then enter the following address in the URL field:
 
   `http://jsonplaceholder.typicode.com/posts/1`
 
-- Select "Retrieve One" in the **Action Hint** dropdown menu, then click **Next**. (For this example we will be doing a simple GET request returning one record containing placeholder data)
+![](images/LabGuide400-dc907226.png)
 
-  ![](images/400/retrieveOne.png)
+- In the right hand dropdown select **Get One** in the Action Hint dropdown menu, then click **Next**.
 
-- You'll see on the next screen that AVBCS populates some fields with information from the address we have provided. The **Service Name** and **Service ID** are filled in for us.
+![](images/LabGuide400-dc4ef0ff.png)
+
+- You'll see on the next screen that AVBCS populates some fields with information from the address we have provided. The **Service Name** and **Service ID** are filled in for us. Click on the **Test** tab to try our connection and make sure it works.
 
   ![](images/400/serviceName.png)
 
-- Click on the **Test** tab to try our connection and make sure it works. On the **Test** tab, click **Send** and review the data returned.
+- Inside the **Test** tab, click **Send** and review the data returned.
 
-  ![](images/400/testConnection.png)
+![](images/LabGuide400-5d6b06a9.png)
 
 - If the data comes back successfully, click **Copy to Response Body** to inform VBCS of the response structure.
 
@@ -136,7 +138,7 @@ We will now add the Service Connection through which data will be retrieved from
 
 - Check the **Response** tab to see the response is now in the "Example" text area, then click **Create**.
 
-  ![](images/400/exampleResponse.png)
+![](images/LabGuide400-2531021b.png)
 
 - Once created, the development console will display the tab of the new service connection.
 
@@ -155,19 +157,21 @@ There are a few steps to integrating REST data into our app. First we'll need to
 
 ### Define Custom Variable Type
 
-- In the left panel of our developer console, select **main** under **inventoryMobileApp > flows** and then once on the **main** flow, select the **(x)** icon to display the variables of that flow.
+- In the left panel of our developer console, select the mobile menu icon, then expand the **flows --> item1 --> item1-start** page.
 
-  ![](images/400/mainContainer.png)
+![](images/LabGuide400-a4d39090.png)
 
-- Select the **Types** tab and click the **+ Type** button on the right and click **From Endpoint**.
+- Select the **(x)** icon to display the variables of that flow. Select the **Types** tab.
 
-  ![](images/400/typesTab.png)
+![](images/400/typesTab.png)
 
-  ![](images/400/typeEndpoint.png)
+- Click the **+ Type** button on the right and choose the **From Endpoint**.
+
+![](images/400/typeEndpoint.png)
 
 - For the type's endpoint expand **Service Connections > Posts** and choose **GET /1** and click **Next**.
 
-  ![](images/400/defineTypeEndpoint.png)
+![](images/LabGuide400-6c99cb32.png)
 
 - In the **Endpoint Structure** step, check the box next to **{}Response** to select all the items in the response structure. Click **Finish**.
 
@@ -175,51 +179,77 @@ There are a few steps to integrating REST data into our app. First we'll need to
 
 #### Create Variable
 
-- We now have our type that will be used in our variable definition, let's set up our variable. Go back to the **Variables** tab and click on the **+ Variable** button to begin creating a variable. In the **New Variable** window that opens, enter `itemDescription` as the new variable's Id and choose our newly created **get1** from the dropdown menu as the type, then click **Create**.
+ We now have our type that will be used in our variable definition, let's set up our variable.
+
+ - Go back to the **Variables** tab and click on the **+ Variable** button to begin creating a variable.
+
+ ![](images/LabGuide400-cadc2338.png)
+
+ - In the new variable window that opens, enter ```itemDescription``` as the new variable's Id and choose our newly created **get1** from the dropdown menu as the type, then click **Create**.
 
   ![](images/400/newVariableDefinition.png)
 
-- You'll now see the variable listed in the **Main** flow's variable list. This gives us a place to store the retrieved data and a reference we can use to store it and retrieve it from the app.
+- You'll now see the variable listed in the **item1-start** flow's variable list. This gives us a place to store the retrieved data and a reference we can use to store it and retrieve it from the app.
+
+![](images/LabGuide400-a15181c1.png)
 
 ### Define Action Chain
 
-- Now that the variable which will hold our response is created we can define the **Action Chain** that will retrieve the data from our **Service Connection** and store it in the variable.
+Now that the variable which will hold our response is created we can define the Action Chain that will retrieve the data from our Service Connection and store it in the variable.
 
-- Click on the icon that resembles a flag to open **Actions** and click the **+ Actions Chain** button.
+- Open **Actions** and click the **+ Actions Chain** button.
 
-  ![](images/400/actionsIcon.png)
+![](images/LabGuide400-1bfe39a5.png)
 
-- Set the Id of the action chain as `retrieveItemDescription` and click **Create**.
+- Set the Id of the action chain as ```retrieveItemDescription``` and click **Create**.
 
   ![](images/400/newActionChain.png)
 
-- You should now see the **Action Chain** configuration tab displayed. This is where we'll set the steps it should perform.
+- You should now see the Action Chain configuration tab displayed. This is where we'll set the steps it should perform. You'll see on the left, there is a panel of pre-created action templates ready to use that we can drag onto the chain.
 
   ![](images/400/actionChainConfig.png)
 
-- For our purposes we'll need two steps, first call a REST endpoint and second, assign the response to a variable. You'll see on the left, there is a panel of pre-created action templates ready to use that we can drag onto the chain. Drag the icon for **Call Rest Endpoint** onto the "plus sign under the **Start** icon in the chain.
+- For our purposes we'll need two steps, first call a REST endpoint and second, assign the response to a variable. Drag the icon for **Call Rest Endpoint** onto the "plus sign under the **Start** icon in the chain.
 
-  ![](images/400/addRestToChain.png)
+![](images/LabGuide400-5d835a01.png)
 
-- In the right panel there will be a button for selecting the endpoint, click that button to open the endpoint configuration. In the **Select Endpoint** window, expand **Service Connections > Posts** and select **GET** then click **Select**.
+- In the right panel, click **Select Endpoint**
 
-  ![](images/400/endpointSelection.png)
+![](images/LabGuide400-45a21f6f.png)
+
+- In the **Select Endpoint** window, expand **Service Connections > Posts** and select **GET** then click **Select**.
+
+![](images/LabGuide400-87016846.png)
 
 - For the next step in the chain, we'll assign the response to our variable. In the list of action templates in the left panel, drag **Assign Variables** onto the plus sign at the bottom of the chain.
 
-  ![](images/400/addAssignVarToChain.png)
+![](images/LabGuide400-5bd4f51a.png)
 
-- Once that's added to our chain the right panel will have the assignments configurations options. There is a link to open the assignment window accessable via the **Assign** text next to the Variables heading in the right panel. Clicking this will open the **Map Variables To Parameters** window.
+- In the right hand pane click on the **Assign** link.
 
-  ![](images/400/assignLink.png)
+![](images/400/assignLink.png)
 
-- Under the **Sources** column on the left, expand "callRestEndpoint1" and drag "body" over and drop it onto the "itemDescription" under **Flow** in the **Target** column on the right . When you drop it on the "itemDescription" you should get a line drawn between the items. Click **Save**.
+Clicking this will open the Map Variables To Parameters window.
 
-  ![](images/400/mapVariables.png)
+![](images/LabGuide400-55736c2d.png)
+
+- Under the **Sources** column on the left, expand "callRestEndpoint1" and drag "body" over and drop it onto the "itemDescription" under **Flow** in the **Target** column on the right . When you drop it on the "itemDescription" you should get a line drawn between the items. Once the line appears click **Save**.
+
+![](images/LabGuide400-b10c8c08.png)
+
+- You should see the action as mapped in the right hand pane before proceeding to the next step.
+
+![](images/LabGuide400-20d1aa5a.png)
 
 ### Bind Action Chain to App Event
 
-- The action chain is now ready to do it's work, now we'll tell our app what event should be used to trigger this action chain. Click on the **InventoryDetail** tab (or if it's closed, open from the panel on the left) and then drag a button from the components column onto the page between the image and the list components. In the button's configuration panel on the right side change the **Text** from "button" to "More Info" and choose the "Full" chroming option to make our button stand out a little more. Next click the **Events** tab. Once on the **Events** page, click the **+ Event Listener** button to begin linking our action chain to an event.
+The action chain is now ready to do it's work. All we need to do is tell our app what event should be used to trigger this action chain.
+
+- Click on the **InventoryDetail** tab in the left hand pane.
+
+![](images/LabGuide400-907131f8.png)
+
+ - Then drag a button from the components column onto the page between the image and the list components. In the button's configuration panel on the right side change the **Text** from "button" to "More Info" and choose the "Full" chroming option to make our button stand out a little more. Next click the **Events** tab. Once on the **Events** page, click the **+ Event Listener** button to begin linking our action chain to an event.
 
   ![](images/400/buttonText.png)
 
