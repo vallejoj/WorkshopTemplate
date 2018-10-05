@@ -61,32 +61,42 @@ Next we'll add a page to display inventory item details and once that is complet
 ![](images/200/liveButton.png)
 
 - Select a row from the list view on the mobile phone.
-***
+
 ![](images/LabGuide400-41aafa64.png)
 
-- This will open our new **Inventory Detail** page and display the information from the item we have selected. You'll see that the page is already created for us including a back button that will navigate back to the overall inventory list.
+- This will open our new Inventory Detail page and display the information from the item we have selected. You'll see that the page is already created for us including a back button that will navigate back to the overall inventory list.
 
 ![](images/LabGuide400-1751443a.png)
 
-- Exit "Live" mode by clicking the "Live" button again.
+- Exit Live mode by clicking the **Design** button again.
 
-- Now we'll add an image to our detail page. From the component list in the left panel, drag an "Image" component onto the Inventory Detail page so that it is placed between the title bar and our "List" component. You should now have a layout with a blank image on it.
+![](images/LabGuide400-fd3f520a.png)
 
-  ![](images/400/imageAdded.png)
+- Now we'll add an image to our detail page. From the component list in the left panel, drag an "Image" component onto the Inventory Detail page so that it is placed between the title bar and our "List" component.
 
-- We can upload an image to VBCS for use in our app. In the left column of the development console expand **inventorymobileapp > resources** so that the **Images** is visible. Right click on **Images** and click **Import**.
+![](images/LabGuide400-741528ec.png)
 
-  ![](images/400/importImage.png)
+- You should now have a layout with a blank image on it.
 
-- Import the `wineGlass.png` image provided. (If the image is not listed in the left panel after importing, you may need to refresh your browser window)
+![](images/400/imageAdded.png)
 
-  ![](images/400/importWineGlass.png)
+- We can upload an image to VBCS for use in our app by expanding **inventorymobileapp > resources** so that the **Images** is visible. Right click on **Images** and then click **Import** to open the upload dialogue.
 
-- Back on the **Inventory Detail** page select the image component and select the **Data** tab. The resources are accessed in the applications file structure so we will set the **Source URL** on the **Data** tab as `./resources/images/wineGlass.png` and press enter. You should now see an image on our page. (In this example we've used a generic image but we could have also used a variable insead of a source URL and referenced a different image for each inventory item.)
+![](images/LabGuide400-8e08fd04.png)
+
+- Download the <a href="images/wineGlass.png" target="wine">wine_glass.png</a> image to your local machine. If the image opens in a new tab, **right click** on it in your browser and **select save image as** to save to your local machine.
+
+- Then drag and drop the file into the Import prompt and press **Import**.
+
+![](images/LabGuide400-8dd7fd30.png)
+
+- Back on the **Inventory Detail** page select the image component and select the **Data** tab.
+
+![](images/LabGuide400-85c462a4.png)
+
+- Set the Source URL to  ```./resources/images/wineGlass.png``` and press enter. You should now see an image on our page.
 
   ![](images/400/wineImageSource.png)
-
-- Our next steps will involve adding data to this detail page which is retrieved from an external REST service.
 
 ### Add REST Service Connection
 
