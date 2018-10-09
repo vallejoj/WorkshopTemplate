@@ -157,7 +157,7 @@ There are a few steps to integrating REST data into our app. First we'll need to
 
 ### Define Custom Variable Type
 
-- In the left panel of our developer console, select the mobile menu icon, then expand the **flows --> item1 --> item1-start** page.
+- In the left panel of our developer console, select the mobile menu icon, then expand the **flows --> item1** page.
 
 ![](images/LabGuide400-a4d39090.png)
 
@@ -175,7 +175,7 @@ There are a few steps to integrating REST data into our app. First we'll need to
 
 - In the **Endpoint Structure** step, check the box next to **{}Response** to select all the items in the response structure. Click **Finish**.
 
-  ![](images/400/endpointStructure.png)
+![](images/400/endpointStructure.png)
 
 #### Create Variable
 
@@ -189,7 +189,7 @@ There are a few steps to integrating REST data into our app. First we'll need to
 
   ![](images/400/newVariableDefinition.png)
 
-- You'll now see the variable listed in the **item1-start** flow's variable list. This gives us a place to store the retrieved data and a reference we can use to store it and retrieve it from the app.
+- You'll now see the variable listed in the **item1** flow's variable list. This gives us a place to store the retrieved data and a reference we can use to store it and retrieve it from the app.
 
 ![](images/LabGuide400-a15181c1.png)
 
@@ -203,11 +203,11 @@ Now that the variable which will hold our response is created we can define the 
 
 - Set the Id of the action chain as ```retrieveItemDescription``` and click **Create**.
 
-  ![](images/400/newActionChain.png)
+![](images/400/newActionChain.png)
 
 - You should now see the Action Chain configuration tab displayed. This is where we'll set the steps it should perform. You'll see on the left, there is a panel of pre-created action templates ready to use that we can drag onto the chain.
 
-  ![](images/400/actionChainConfig.png)
+![](images/400/actionChainConfig.png)
 
 - For our purposes we'll need two steps, first call a REST endpoint and second, assign the response to a variable. Drag the icon for **Call Rest Endpoint** onto the "plus sign under the **Start** icon in the chain.
 
@@ -235,7 +235,7 @@ Clicking this will open the Map Variables To Parameters window.
 
 - Under the **Sources** column on the left, expand "callRestEndpoint1" and drag "body" over and drop it onto the "itemDescription" under **Flow** in the **Target** column on the right . When you drop it on the "itemDescription" you should get a line drawn between the items. Once the line appears click **Save**.
 
-![](images/LabGuide400-b10c8c08.png)
+![](images/LabGuide400-fa93f7da.png)
 
 - You should see the action as mapped in the right hand pane before proceeding to the next step.
 
@@ -255,7 +255,7 @@ The action chain is now ready to do it's work. All we need to do is tell our app
 
  - In the button's configuration panel on the right side change the Text from button to ```More Info``` and choose the **Full** chroming option to make our button stand out a little more.
 
-  ![](images/400/buttonText.png)
+![](images/400/buttonText.png)
 
 - Next click the **Events** tab. Once on the Events page, click the **+ Event Listener** button to begin linking our action chain to an event.
 
@@ -276,27 +276,32 @@ The action chain is now ready to do it's work. All we need to do is tell our app
 
 - Next select our action chain ```retrieveItemDescription``` and click **Select**.
 
-**q/a stopped**
-
-![](images/400/selectActionChain.png)
+![](images/LabGuide400-ed83f5ec.png)
 
 - Our pieces are all tied together, when the button is clicked on the inventory detail page it will trigger our action chain that in turn calls our service connection and stores the response of that call in our variable. All that's left to do now is display the data stored in the variable in our app.
 
 ### Display REST Response Variable Data
 
-- Navigate back to the **Mobile App** section of the development console and expand **inventoryMobileApp > flows > main** and select our **InventoryDetail** page.
+- Navigate back to the **item1-Inventory-detail** tab.
 
-  ![](images/400/inventoryDetailPage.png)
+![](images/LabGuide400-fcbeb1f3.png)
 
 - Drag a "Text" component from the left column into the **Inventory Detail** page. You'll see a text box with a placeholder message of "Bind Text."
 
-- Now we'll set the text to be the data retrieved from the REST call.
+![](images/LabGuide400-7a0067c2.png)
 
-  - With the text box selected, hover over the "Value" field in the right panel and a small **(x)** will appear. Click that **(x)** to assign a variable to the text field.
-  - In the dropdown, expand **Flow > itemDescription** and select **body**. This will display the value in that variable on our Inventory detail page when when our button is clicked.
+- Now we'll set the text to be the data retrieved from the REST call. With the text box selected, hover over the "Value" field in the right panel and a small **(x)** will appear. Click that **(x)** to assign a variable to the text field.
 
-  ![](images/400/textValue.png)
+![](images/LabGuide400-efdd412e.png)
 
-- Let's test our button. Go back to the **main-start** page which lists our inventory items, enable **Live** mode by clicking on the "Live" button in the top right corner. Once in **Live** mode, click an item in the list, then when the **itemDetail** page loads test our button to verify it displays our new information.
+- In the dropdown, expand **Flow > itemDescription** and select **body**. This will display the value in that variable on our Inventory detail page when our button is clicked.
 
-  ![](images/400/buttonPopulatedText.png)
+![](images/400/textValue.png)
+
+- Let's test our button. Go back to the **item1-start** page which lists our inventory items, enable **Live** mode by clicking on the "Live" button in the top right corner.
+
+![](images/LabGuide400-a6e98ceb.png)
+
+- Once in **Live** mode, click an item in the list, then when the **itemDetail** page loads test our button to verify it displays our new information.
+
+![](images/400/buttonPopulatedText.png)
