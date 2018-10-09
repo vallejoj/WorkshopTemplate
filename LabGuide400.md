@@ -24,7 +24,7 @@ Next we'll add a page to display inventory item details and once that is complet
 
 - Open the item1-start page by expanding the **inventorymobileapp --> flows --> item1** menu and click the **item1-start**.
 
-![](images/LabGuide400-06c90509.png)
+![](images/400/LabGuide400-06c90509.png)
 
 
  - Navigate and open the **Page Structure** panel. This will make it easy to see all the components and select the List View component which we will work with next.
@@ -33,7 +33,7 @@ Next we'll add a page to display inventory item details and once that is complet
 
 - Select the **List View** component from the **Page Structure**.
 
-![](images/LabGuide400-192fb5c5.png)
+![](images/400/LabGuide400-192fb5c5.png)
 
 - With the List View component selected, open the **Quick Start** tab in the right panel and select **Add Detail Page**.
 
@@ -62,19 +62,19 @@ Next we'll add a page to display inventory item details and once that is complet
 
 - Select a row from the list view on the mobile phone.
 
-![](images/LabGuide400-41aafa64.png)
+![](images/400/LabGuide400-41aafa64.png)
 
 - This will open our new Inventory Detail page and display the information from the item we have selected. You'll see that the page is already created for us including a back button that will navigate back to the overall inventory list.
 
-![](images/LabGuide400-1751443a.png)
+![](images/400/LabGuide400-1751443a.png)
 
 - Exit Live mode by clicking the **Design** button again.
 
-![](images/LabGuide400-fd3f520a.png)
+![](images/400/LabGuide400-fd3f520a.png)
 
 - Now we'll add an image to our detail page. From the component list in the left panel, drag an "Image" component onto the Inventory Detail page so that it is placed between the title bar and our "List" component.
 
-![](images/LabGuide400-741528ec.png)
+![](images/400/LabGuide400-741528ec.png)
 
 - You should now have a layout with a blank image on it.
 
@@ -82,17 +82,17 @@ Next we'll add a page to display inventory item details and once that is complet
 
 - We can upload an image to VBCS for use in our app by expanding **inventorymobileapp > resources** so that the **Images** is visible. Right click on **Images** and then click **Import** to open the upload dialogue.
 
-![](images/LabGuide400-8e08fd04.png)
+![](images/400/LabGuide400-8e08fd04.png)
 
 - Download the <a href="images/wineGlass.png" target="wine">wine_glass.png</a> image to your local machine. If the image opens in a new tab, **right click** on it in your browser and **select save image as** to save to your local machine.
 
 - Then drag and drop the file into the Import prompt and press **Import**.
 
-![](images/LabGuide400-8dd7fd30.png)
+![](images/400/LabGuide400-8dd7fd30.png)
 
 - Back on the **Inventory Detail** page select the image component and select the **Data** tab.
 
-![](images/LabGuide400-85c462a4.png)
+![](images/400/LabGuide400-85c462a4.png)
 
 - Set the Source URL to  ```./resources/images/wineGlass.png``` and press enter. You should now see an image on our page.
 
@@ -104,7 +104,7 @@ We will now add the Service Connection through which data will be retrieved from
 
 - In your application development console, click on **Service Connections** icon in the far left panel.
 
-![](images/LabGuide400-ce468472.png)
+![](images/400/LabGuide400-ce468472.png)
 
 - Add a service connection by press the **"+ Service Connection"** button.
 
@@ -118,11 +118,11 @@ We will now add the Service Connection through which data will be retrieved from
 
   `http://jsonplaceholder.typicode.com/posts/1`
 
-![](images/LabGuide400-dc907226.png)
+![](images/400/LabGuide400-dc907226.png)
 
 - In the right hand dropdown select **Get One** in the Action Hint dropdown menu, then click **Next**.
 
-![](images/LabGuide400-dc4ef0ff.png)
+![](images/400/LabGuide400-dc4ef0ff.png)
 
 - You'll see on the next screen that AVBCS populates some fields with information from the address we have provided. The **Service Name** and **Service ID** are filled in for us. Click on the **Test** tab to try our connection and make sure it works.
 
@@ -130,7 +130,7 @@ We will now add the Service Connection through which data will be retrieved from
 
 - Inside the **Test** tab, click **Send** and review the data returned.
 
-![](images/LabGuide400-5d6b06a9.png)
+![](images/400/LabGuide400-5d6b06a9.png)
 
 - If the data comes back successfully, click **Copy to Response Body** to inform VBCS of the response structure.
 
@@ -138,7 +138,7 @@ We will now add the Service Connection through which data will be retrieved from
 
 - Check the **Response** tab to see the response is now in the "Example" text area, then click **Create**.
 
-![](images/LabGuide400-2531021b.png)
+![](images/400/LabGuide400-2531021b.png)
 
 - Once created, the development console will display the tab of the new service connection.
 
@@ -159,7 +159,7 @@ There are a few steps to integrating REST data into our app. First we'll need to
 
 - In the left panel of our developer console, select the mobile menu icon, then expand the **flows --> item1** page.
 
-![](images/LabGuide400-a4d39090.png)
+![](images/400/LabGuide400-a4d39090.png)
 
 - Select the **(x)** icon to display the variables of that flow. Select the **Types** tab.
 
@@ -171,7 +171,7 @@ There are a few steps to integrating REST data into our app. First we'll need to
 
 - For the type's endpoint expand **Service Connections > Posts** and choose **GET /1** and click **Next**.
 
-![](images/LabGuide400-6c99cb32.png)
+![](images/400/LabGuide400-6c99cb32.png)
 
 - In the **Endpoint Structure** step, check the box next to **{}Response** to select all the items in the response structure. Click **Finish**.
 
@@ -183,7 +183,7 @@ There are a few steps to integrating REST data into our app. First we'll need to
 
  - Go back to the **Variables** tab and click on the **+ Variable** button to begin creating a variable.
 
- ![](images/LabGuide400-cadc2338.png)
+ ![](images/400/LabGuide400-cadc2338.png)
 
  - In the new variable window that opens, enter ```itemDescription``` as the new variable's Id and choose our newly created **get1** from the dropdown menu as the type, then click **Create**.
 
@@ -191,7 +191,7 @@ There are a few steps to integrating REST data into our app. First we'll need to
 
 - You'll now see the variable listed in the **item1** flow's variable list. This gives us a place to store the retrieved data and a reference we can use to store it and retrieve it from the app.
 
-![](images/LabGuide400-a15181c1.png)
+![](images/400/LabGuide400-a15181c1.png)
 
 ### Define Action Chain
 
@@ -199,7 +199,7 @@ Now that the variable which will hold our response is created we can define the 
 
 - Open **Actions** and click the **+ Actions Chain** button.
 
-![](images/LabGuide400-1bfe39a5.png)
+![](images/400/LabGuide400-1bfe39a5.png)
 
 - Set the Id of the action chain as ```retrieveItemDescription``` and click **Create**.
 
@@ -211,19 +211,19 @@ Now that the variable which will hold our response is created we can define the 
 
 - For our purposes we'll need two steps, first call a REST endpoint and second, assign the response to a variable. Drag the icon for **Call Rest Endpoint** onto the "plus sign under the **Start** icon in the chain.
 
-![](images/LabGuide400-5d835a01.png)
+![](images/400/LabGuide400-5d835a01.png)
 
 - In the right panel, click **Select Endpoint**
 
-![](images/LabGuide400-45a21f6f.png)
+![](images/400/LabGuide400-45a21f6f.png)
 
 - In the **Select Endpoint** window, expand **Service Connections > Posts** and select **GET** then click **Select**.
 
-![](images/LabGuide400-87016846.png)
+![](images/400/LabGuide400-87016846.png)
 
 - For the next step in the chain, we'll assign the response to our variable. In the list of action templates in the left panel, drag **Assign Variables** onto the plus sign at the bottom of the chain.
 
-![](images/LabGuide400-5bd4f51a.png)
+![](images/400/LabGuide400-5bd4f51a.png)
 
 - In the right hand pane click on the **Assign** link.
 
@@ -231,15 +231,15 @@ Now that the variable which will hold our response is created we can define the 
 
 Clicking this will open the Map Variables To Parameters window.
 
-![](images/LabGuide400-55736c2d.png)
+![](images/400/LabGuide400-55736c2d.png)
 
 - Under the **Sources** column on the left, expand "callRestEndpoint1" and drag "body" over and drop it onto the "itemDescription" under **Flow** in the **Target** column on the right . When you drop it on the "itemDescription" you should get a line drawn between the items. Once the line appears click **Save**.
 
-![](images/LabGuide400-fa93f7da.png)
+![](images/400/LabGuide400-fa93f7da.png)
 
 - You should see the action as mapped in the right hand pane before proceeding to the next step.
 
-![](images/LabGuide400-20d1aa5a.png)
+![](images/400/LabGuide400-20d1aa5a.png)
 
 ### Bind Action Chain to App Event
 
@@ -247,11 +247,11 @@ The action chain is now ready to do it's work. All we need to do is tell our app
 
 - Click on the **InventoryDetail** tab in the left hand pane.
 
-![](images/LabGuide400-907131f8.png)
+![](images/400/LabGuide400-907131f8.png)
 
  - Then drag a button from the components column onto the page between the image and the list components.
 
-![](images/LabGuide400-9408ade1.png)
+![](images/400/LabGuide400-9408ade1.png)
 
  - In the button's configuration panel on the right side change the Text from button to ```More Info``` and choose the **Full** chroming option to make our button stand out a little more.
 
@@ -259,7 +259,7 @@ The action chain is now ready to do it's work. All we need to do is tell our app
 
 - Next click the **Events** tab. Once on the Events page, click the **+ Event Listener** button to begin linking our action chain to an event.
 
-![](images/LabGuide400-93c7b627.png)
+![](images/400/LabGuide400-93c7b627.png)
 
 - VBCS allows us to quickly add events to our buttons. Choose **Quick Start: 'click'** to click event to the button.
 
@@ -272,11 +272,11 @@ The action chain is now ready to do it's work. All we need to do is tell our app
 
 - Then click the **Select Action Chain** button in the right panel.
 
-![](images/LabGuide400-e19a96cf.png)
+![](images/400/LabGuide400-e19a96cf.png)
 
 - Next select our action chain ```retrieveItemDescription``` and click **Select**.
 
-![](images/LabGuide400-ed83f5ec.png)
+![](images/400/LabGuide400-ed83f5ec.png)
 
 - Our pieces are all tied together, when the button is clicked on the inventory detail page it will trigger our action chain that in turn calls our service connection and stores the response of that call in our variable. All that's left to do now is display the data stored in the variable in our app.
 
@@ -284,15 +284,15 @@ The action chain is now ready to do it's work. All we need to do is tell our app
 
 - Navigate back to the **item1-Inventory-detail** tab.
 
-![](images/LabGuide400-fcbeb1f3.png)
+![](images/400/LabGuide400-fcbeb1f3.png)
 
 - Drag a "Text" component from the left column into the **Inventory Detail** page. You'll see a text box with a placeholder message of "Bind Text."
 
-![](images/LabGuide400-7a0067c2.png)
+![](images/400/LabGuide400-7a0067c2.png)
 
 - Now we'll set the text to be the data retrieved from the REST call. With the text box selected, hover over the "Value" field in the right panel and a small **(x)** will appear. Click that **(x)** to assign a variable to the text field.
 
-![](images/LabGuide400-efdd412e.png)
+![](images/400/LabGuide400-efdd412e.png)
 
 - In the dropdown, expand **Flow > itemDescription** and select **body**. This will display the value in that variable on our Inventory detail page when our button is clicked.
 
@@ -300,7 +300,7 @@ The action chain is now ready to do it's work. All we need to do is tell our app
 
 - Let's test our button. Go back to the **item1-start** page which lists our inventory items, enable **Live** mode by clicking on the "Live" button in the top right corner.
 
-![](images/LabGuide400-a6e98ceb.png)
+![](images/400/LabGuide400-a6e98ceb.png)
 
 - Once in **Live** mode, click an item in the list, then when the **itemDetail** page loads test our button to verify it displays our new information.
 
