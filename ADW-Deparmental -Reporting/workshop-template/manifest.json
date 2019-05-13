@@ -1,0 +1,40 @@
+{
+    "workshop": {
+        "title": "Workshop Title",
+        "description": "Description of this workshop.",
+        "theme": "default",
+        "interactive": "https://launch.oracle.com/?",
+        "labs": [
+            {
+                "number": "0",
+                "filename": "Intro.md",
+                "title": "Workshop Introduction",
+                "description": "Step-by-step workshop instructions"
+            },
+            {
+                "number": "100",
+                "filename": "LabGuide100.md",
+                "title": "Lab 100: Getting Started and Provisioning a New Autonomous Data Warehouse.",
+                "description": "Use Developer Cloud Service to create issues, tasks, and sprints, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage."
+            },
+            {
+                "number": "200",
+                "filename": "LabGuide200.md",
+                "title": "Lab 200:  Working with Data Warehouse Services and the Free Sample Data Sets",
+                "description": "In this lab you will explore the free sample data sets that are included within your new autonomous data warehouse. As part of this lab you will experiment with the selecting different levels of database services that come with your Autonomous Data Warehouse."
+            },
+            {
+                "number": "300",
+                "filename": "LabGuide300.md",
+                "title": "Lab 300: Loading Data into Your New Autonomous Data Warehouse",
+                "description": "In this lab, you will be uploading files to your ADW and creating tables. You can load data into your new Autonomous Data Warehouse using Oracle Database tools, Oracle, and 3rd party data integration tools."
+            },
+            {
+                "number": "400",
+                "filename": "LabGuide400.md",
+                "title": "Lab 400: Creating Rich Data Visualizations",
+                "description": " This lab will walk you through the process of connecting your Autonomous Data Warehouse to OAC to build sophisticated data visualizations to help your business teams get deeper insights about their data"
+            }
+        ]
+    }
+}
